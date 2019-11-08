@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Алексей Васильев](https://up.htmlacademy.ru/adaptive/18/user/372785).
-* Наставник: `Неизвестно`.
+* Студент: [Алексей Васильев](https://htmlacademy.ru/profile/alexv).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 
