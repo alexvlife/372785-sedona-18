@@ -7,17 +7,18 @@
   <body class="page-body">
 
     <header class="page-body__header page-header">
-      <a class="page-header__logo site-logo" href="index.html" title="City of Sedona">
+      <a class="page-header__logo logo" href="index.html" title="City of Sedona">
         <img
-          class="site-logo__image"
+          class="logo__image"
           src="https://via.placeholder.com/102x83"
           width="102"
           height="83"
           alt="Логотип «City of Sedona»">
       </a>
 
+      <button class="page-header__toggle-button toggle-button toggle-button_open" type="button" title="Развернуть меню"></button>
+
       <nav class="page-header__navigation main-navigation">
-        <button class="main-navigation__toggle-button toggle-button toggle-button_open" type="button" title="Развернуть меню"></button>
         <ul class="main-navigation__list main-navigation-list">
           <li class="main-navigation-list__item">
             <a class="main-navigation-list__item-link" href="index.html">Главная</a>
@@ -34,20 +35,23 @@
         </ul>
       </nav>
 
-      <div class="page-header__image site-main-image site-main-image_secondary" title="Sedona"></div>
+      <div class="page-header__image promo-image promo-image_secondary" title="Sedona">
+        <span class="visually-hidden">Welcome to the gorgeous Sedona</span>
+      </div>
     </header>
 
     <main class="page-body__main page-main">
-      <h1 class="visually-hidden">Фото и видео городка Седона</h1>
-
-      <p class="page-main__title page-title">Фото и видео</p>
-      <p class="page-main__description page-text">Не можете решиться на путешествие из-за курса?
-        Фотографии помогут вам забыть о политике и экономике.</p>
+      <header class="page-main__header section-header">
+        <h1 class="visually-hidden">Фото и видео городка Седона</h1>
+        <p class="section-header__title title">Фото и видео</p>
+        <p class="section-header__description text">Не можете решиться на путешествие из-за курса?
+          Фотографии помогут вам забыть о политике и экономике.</p>
+      </header>
 
       <ul class="page-main__media-list">
 
         <li class="page-main__media-item media-note">
-          <h2 class="media-note__title">Неродные просторы</h2>
+          <h2 class="media-note__title title title_secondary">Неродные просторы</h2>
           <img
             class="media-note__image"
             src="https://via.placeholder.com/280x280"
@@ -55,7 +59,7 @@
             height="280"
             alt="Фото: Неродные просторы"
             title="Неродные просторы">
-          <p class="media-note__caption">Автор фото: Борис</p>
+          <p class="media-note__caption caption">Автор фото: Борис</p>
           <div class="media-note__rating rating">
             <a class="rating__like-action" href="#" title="Нравится">
               <img
@@ -66,12 +70,12 @@
                 alt="Иконка: Палец вверх"
                 title="Лайк">
             </a>
-            <span class="rating__score">1350</span>
+            <span class="rating__score title title_secondary">1350</span>
           </div>
         </li>
 
         <li class="page-main__media-item media-note">
-          <h2 class="media-note__title">Местная растительность</h2>
+          <h2 class="media-note__title title title_secondary">Местная растительность</h2>
           <img
             class="media-note__image"
             src="https://via.placeholder.com/280x280"
@@ -79,7 +83,7 @@
             height="280"
             alt="Фото: Местная растительность"
             title="Местная растительность">
-          <p class="media-note__caption">Автор фото: Сергей</p>
+          <p class="media-note__caption caption">Автор фото: Сергей</p>
           <div class="media-note__rating rating">
             <a class="rating__like-action" href="#" title="Нравится">
               <img
@@ -90,12 +94,12 @@
                 alt="Иконка: Палец вверх"
                 title="Лайк">
             </a>
-            <span class="rating__score">143</span>
+            <span class="rating__score title title_secondary">143</span>
           </div>
         </li>
 
         <li class="page-main__media-item media-note">
-          <h2 class="media-note__title">Дорога на Север</h2>
+          <h2 class="media-note__title title title_secondary">Дорога на Север</h2>
           <img
             class="media-note__image"
             src="https://via.placeholder.com/280x280"
@@ -103,7 +107,7 @@
             height="280"
             alt="Фото: Дорога на Север"
             title="Дорога на Север">
-          <p class="media-note__caption">Автор фото: Петр</p>
+          <p class="media-note__caption caption">Автор фото: Петр</p>
           <div class="media-note__rating rating">
             <a class="rating__like-action" href="#" title="Нравится">
               <img
@@ -114,12 +118,12 @@
                 alt="Иконка: Палец вверх"
                 title="Лайк">
             </a>
-            <span class="rating__score">96</span>
+            <span class="rating__score title title_secondary">96</span>
           </div>
         </li>
 
         <li class="page-main__media-item media-note">
-          <h2 class="media-note__title">Мост дьявола</h2>
+          <h2 class="media-note__title title title_secondary">Мост дьявола</h2>
           <img
             class="media-note__image"
             src="https://via.placeholder.com/280x280"
@@ -127,7 +131,7 @@
             height="280"
             alt="Фото: Мост дьявола"
             title="Мост дьявола">
-          <p class="media-note__caption">Автор фото: Антон</p>
+          <p class="media-note__caption caption">Автор фото: Антон</p>
           <div class="media-note__rating rating">
             <a class="rating__like-action" href="#" title="Нравится">
               <img
@@ -138,7 +142,7 @@
                 alt="Иконка: Палец вверх"
                 title="Лайк">
             </a>
-            <span class="rating__score">254</span>
+            <span class="rating__score title title_secondary">254</span>
           </div>
         </li>
 
@@ -146,14 +150,13 @@
     </main>
 
     <footer class="page-body__footer page-footer">
-      <h2 class="visually-hidden">Контактная информация</h2>
-      <a href="#" class="page-footer__hash-tag main-hash-tag" title="Посетите Седону">#visitsedona</a>
+      <a href="#" class="page-footer__title title title_increased" title="Посетите Седону">#visitsedona</a>
 
       <ul class="page-footer__socials socials">
         <li class="socials__item">
-          <a href="https://twitter.com" class="socials__item-link" target="_blank" title="Мы в Twitter">
+          <a href="https://twitter.com" class="socials__link" target="_blank" title="Мы в Twitter">
             <img
-              class="socials__item-logo"
+              class="socials__logo"
               src="https://via.placeholder.com/18x14"
               width="18"
               height="14"
@@ -161,9 +164,9 @@
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://www.facebook.com" class="socials__item-link" target="_blank" title="Мы в Facebook">
+          <a href="https://www.facebook.com" class="socials__link" target="_blank" title="Мы в Facebook">
             <img
-              class="socials__item-logo"
+              class="socials__logo"
               src="https://via.placeholder.com/9x18"
               width="9"
               height="18"
@@ -171,9 +174,9 @@
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://www.youtube.com" class="socials__item-link" target="_blank" title="Мы на YouTube">
+          <a href="https://www.youtube.com" class="socials__link" target="_blank" title="Мы на YouTube">
             <img
-              class="socials__item-logo"
+              class="socials__logo"
               src="https://via.placeholder.com/9x18"
               width="20"
               height="14"
@@ -182,10 +185,10 @@
         </li>
       </ul>
 
-      <p class="page-footer__site-developer site-developer">Разработано
-        <a class="site-developer__link" href="https://htmlacademy.ru" target="_blank" title="HTML Academy">
+      <p class="page-footer__copyright copyright text">Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru" target="_blank" title="HTML Academy">
           <img
-            class="site-developer__logo"
+            class="copyright__image"
             src="https://via.placeholder.com/27x34"
             width="27"
             height="34"
