@@ -1,0 +1,42 @@
+/* all colors */
+$black: #000000;
+$black-30: rgba(0, 0, 0, .3);
+$black-medium: #333333;
+
+$brown: #766357;
+$brown-30: rgba(118, 99, 87, .3);
+$dark-brown: #604e43;
+
+$grey: #e5e5e5;
+$light-grey: #f2f2f2;
+$dark-grey: #d5d5d5;
+
+$grey-blue: #669ec0;
+$light-grey-blue: #81b3d2;
+$dark-grey-blue: #5496bd;
+
+$white: #ffffff;
+$white-30: rgba(255, 255, 255, .3);
+
+/* text colors */
+$page-text-color-base: $black;
+$page-text-color-secondary: $black-medium;
+
+$button-text-color-base: $white;
+$button-text-color-hover: $white;
+$button-text-color-down: $white-30;
+$button-text-color-disabled: $white;
+
+/* background colors */
+$page-bg-color: $white;
+$block-bg-color: $light-grey-blue;
+
+$button-bg-color-base: $light-grey-blue;
+$button-bg-color-hover: $grey-blue;
+$button-bg-color-down: $dark-grey-blue;
+$button-bg-color-disabled: $grey;
+
+$form-control-bg-base: $light-grey;
+$form-control-bg-active: $white;
+$form-control-bg-hover: $grey;
+$form-control-bg-down: $dark-grey;
