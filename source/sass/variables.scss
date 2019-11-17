@@ -1,10 +1,10 @@
 /* all colors */
 $black: #000000;
-$black-30: rgba(0, 0, 0, .3);
+$black-30: rgba(0, 0, 0, 0.3);
 $black-medium: #333333;
 
 $brown: #766357;
-$brown-30: rgba(118, 99, 87, .3);
+$brown-30: rgba(118, 99, 87, 0.3);
 $dark-brown: #604e43;
 
 $grey: #e5e5e5;
@@ -16,7 +16,7 @@ $light-grey-blue: #81b3d2;
 $dark-grey-blue: #5496bd;
 
 $white: #ffffff;
-$white-30: rgba(255, 255, 255, .3);
+$white-30: rgba(255, 255, 255, 0.3);
 
 /* text colors */
 $page-text-color-base: $black;
@@ -40,3 +40,7 @@ $form-control-bg-base: $light-grey;
 $form-control-bg-active: $white;
 $form-control-bg-hover: $grey;
 $form-control-bg-down: $dark-grey;
+
+/* font */
+$font-family-regular: "PTSans", sans-serif;
+$font-family-bold: "PTSans-Bold";
