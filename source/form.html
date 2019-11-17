@@ -47,6 +47,137 @@
         <p class="section-header__description text">Помогите нашим отелям стать лучше!
           Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
       </header>
+
+      <form action="https://echo.htmlacademy.ru" method="POST" class="page-main__form form">
+
+        <section class="form__wrapper form-section">
+          <p class="form-section__title title">Представьтесь:</p>
+
+          <ul class="form-section__control-list form-controls">
+            <li class="form-controls__item form-control">
+              <label class="form-control__label text" for="firstName">Имя*:</label>
+              <input
+                class="form-control__field-text form-field-text title_lowercase"
+                type="text" name="firstName" id="firstName" placeholder="Петр">
+            </li>
+            <li class="form-controls__item form-control">
+              <label class="form-control__label text" for="lastName">Фамилия*:</label>
+              <input
+                class="form-control__field-text form-field-text title_lowercase"
+                type="text" name="lastName" id="lastName" placeholder="Иванов">
+            </li>
+            <li class="form-controls__item form-control">
+              <label class="form-control__label text" for="secondName">Отчество:</label>
+              <input
+                class="form-control__field-text form-field-text title_lowercase"
+                type="text" name="secondName" id="secondName" placeholder="Александрович">
+            </li>
+          </ul>
+        </section>
+
+        <section class="form__wrapper form-section">
+          <p class="form-section__title title">Контактная информация:</p>
+
+          <ul class="form-section__control-list form-controls">
+            <li class="form-controls__item form-control">
+              <label class="form-control__label text" for="phone">Контактный телефон*:</label>
+              <input
+                class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_phone title_lowercase"
+                type="tel" name="phone" id="phone" placeholder="Введите телефон">
+            </li>
+            <li class="form-controls__item form-control">
+              <label class="form-control__label text" for="email">Электронная почта*:</label>
+              <input
+                class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_email title_lowercase"
+                type="email" name="email" id="email" placeholder="Введите e-mail">
+            </li>
+          </ul>
+        </section>
+
+        <section class="form__wrapper form-section">
+          <p class="form-section__title title">Ваше общее впечатление:</p>
+
+          <ul class="form-section__control-list form-controls">
+            <li class="form-controls__item form-control form-control_radio">
+              <label class="form-control__label title_lowercase" for="opinion1">Скорее положительное</label>
+              <input
+                class="form-control__field-radio form-field-radio"
+                type="radio" name="opinion" id="opinion1" value="1" checked>
+            </li>
+            <li class="form-controls__item form-control form-control_radio">
+              <label class="form-control__label title_lowercase" for="opinion2">Скорее отрицательное</label>
+              <input
+                class="form-control__field-radio form-field-radio"
+                type="radio" name="opinion" id="opinion2" value="2">
+            </li>
+            <li class="form-controls__item form-control form-control_radio">
+              <label class="form-control__label title_lowercase" for="opinion3">Затрудняюсь ответить</label>
+              <input
+                class="form-control__field-radio form-field-radio"
+                type="radio" name="opinion" id="opinion3" value="3">
+            </li>
+          </ul>
+        </section>
+
+        <section class="form__wrapper form-section">
+          <p class="form-section__title title">Посещенные достопримечательности:</p>
+
+          <ul class="form-section__control-list form-controls">
+            <li class="form-controls__item form-control_check">
+              <label class="form-control__label title_lowercase" for="place1">Мост Дьявола</label>
+              <input
+                class="form-control__field-check form-field-check"
+                type="checkbox" name="place" id="place1" value="1" checked>
+            </li>
+            <li class="form-controls__item form-control_check">
+              <label class="form-control__label title_lowercase" for="place2">Гора Колокол</label>
+              <input
+                class="form-control__field-check form-field-check"
+                type="checkbox" name="place" id="place2" value="2" checked>
+            </li>
+            <li class="form-controls__item form-control_check">
+              <label class="form-control__label title_lowercase" for="place3">Слайд-парк</label>
+              <input
+                class="form-control__field-check form-field-check"
+                type="checkbox" name="place" id="place3" value="3" checked>
+            </li>
+            <li class="form-controls__item form-control_check">
+              <label class="form-control__label title_lowercase" for="place4">Красные скалы</label>
+              <input
+                class="form-control__field-check form-field-check"
+                type="checkbox" name="place" id="place4" value="4">
+            </li>
+          </ul>
+        </section>
+
+        <section class="form__wrapper form-section">
+          <p class="form-section__title title">Опишите свои эмоции:</p>
+
+          <textarea class="form-section__field-textarea form-field-textarea title title_lowercase"
+            id="story" name="story">
+            Опишите подробно все свои восторги
+          </textarea>
+        </section>
+
+        <button type="submit" class="form__submit button" title="Отправить отзыв">Отправить отзыв</button>
+      </form>
+
+      <section class="popup">
+        <p class="popup__title title">Что-то пошло не так!</p>
+        <p class="popup__description text">Проверьте поля, выделенные красным, скоре всего вы забыли их заполнить</p>
+        <a href="#" class="popup__button button" title="Закрыть модальное окно">Ok</a>
+      </section>
+
+      <section class="popup">
+        <p class="popup__title title">Ваш отзыв отправлен!</p>
+        <p class="popup__description text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          В ближайшее время мы опубликуем его на сайте.
+        </p>
+        <div class="popup__button-wrapper">
+          <a href="#" class="popup__button button" title="Закрыть модальное окно">Закрыть окно</a>
+        </div>
+      </section>
     </main>
 
     <footer class="page-body__footer page-footer">
