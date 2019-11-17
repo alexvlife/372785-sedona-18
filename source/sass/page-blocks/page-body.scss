@@ -1,0 +1,8 @@
+@import "../variables";
+
+.page-body {
+  font-family: $font-family-regular;
+  font-size: $text-size-base;
+  color: $page-text-color-secondary;
+  text-transform: uppercase;
+}

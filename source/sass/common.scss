@@ -1,0 +1,31 @@
+@import "variables";
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.title {
+  font-family: $font-family-bold;
+  font-size: $title-size-base;
+  color: $page-text-color-base;
+
+  &_increased {
+    font-size: $font-size-21;
+  }
+
+  &_lowercase {
+    text-transform: initial;
+  }
+
+  &_secondary {
+    font-size: $font-size-14;
+  }
+}
+
+.caption {
+  text-transform: initial;
+}
