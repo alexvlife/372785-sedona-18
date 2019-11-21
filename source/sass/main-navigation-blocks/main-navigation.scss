@@ -1,0 +1,15 @@
+.main-navigation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation__logo {
+  margin: 0 auto;
+}
+
+.main-navigation__toggle-button {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+}

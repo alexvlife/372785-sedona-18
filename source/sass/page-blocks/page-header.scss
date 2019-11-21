@@ -1,0 +1,21 @@
+@import "../variables";
+
+$image-margin-top: -27px;
+
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  margin: 0 auto;
+}
+
+.page-header__image {
+  margin-top: $image-margin-top;
+}
+
+.page-header__toggle-button {
+  position: absolute;
+  right: 20px;
+  margin-top: $image-margin-top - $toggle-button-height - 18px;
+}

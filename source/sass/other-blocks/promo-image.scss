@@ -1,0 +1,17 @@
+.promo-image {
+  background-repeat: no-repeat;
+
+  &_base {
+    height: 389px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom, center, center;
+    background-size: cover, 281px 214px, cover;
+  }
+
+  &_secondary {
+    height: 158px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom, center, 50% 97%;
+    background-size: cover, 230px 40px, auto;
+  }
+}

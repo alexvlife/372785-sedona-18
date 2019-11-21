@@ -1,0 +1,23 @@
+@import "variables";
+
+@mixin button($font-size) {
+  font-family: $font-family-bold;
+  font-size: $font-size;
+  color: $button-text-color-base;
+  background-color: $button-bg-color-base;
+
+  &:hover {
+    color: $button-text-color-hover;
+    background-color: $grey-blue;
+  }
+
+  &:active {
+    color: $button-text-color-down;
+    background-color: $button-bg-color-down;
+  }
+
+  &:disabled {
+    color: $button-text-color-disabled;
+    background-color: $button-bg-color-disabled;
+  }
+}
