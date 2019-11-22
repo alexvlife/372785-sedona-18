@@ -1,0 +1,22 @@
+@import "../variables";
+
+.socials,
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__link {
+  @include button($font-size-18);
+  width: 46px;
+  height: 48px;
+}
+
+.socials__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
