@@ -1,0 +1,15 @@
+@import "../variables";
+
+.media-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-list__item {
+  padding: 22px 20px 21px 20px;
+  border-top: 1px solid $dark-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $dark-grey;
+  }
+}

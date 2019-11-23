@@ -1,0 +1,12 @@
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.rating__like-action {
+  display: block;
+  width: 23px;
+  height: 21px;
+  margin-right: 13px;
+}
