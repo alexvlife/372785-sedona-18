@@ -1,0 +1,7 @@
+@import "../mixin";
+
+.button {
+  @include button($font-size-18);
+  width: 280px;
+  min-height: 58px;
+}

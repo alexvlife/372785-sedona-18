@@ -1,6 +1,9 @@
 @import "variables";
 
 @mixin button($font-size) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: $font-family-bold;
   font-size: $font-size;
   color: $button-text-color-base;

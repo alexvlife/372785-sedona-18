@@ -1,0 +1,66 @@
+@import "../variables";
+
+.feature-item {
+  padding-top: 33px;
+
+  &:first-child {
+    padding-top: 80px;
+  }
+
+  &:first-child > .feature-item__description {
+    padding-bottom: 45px;
+  }
+
+  &_active {
+    padding-top: 45px;
+    background-color: $light-grey-blue;
+  }
+
+  &_active > .feature-item__title,
+  &_active > .feature-item__caption,
+  &_active > .feature-item__description {
+    color: $white;
+  }
+
+  &_active > .feature-item__description {
+    padding-bottom: 42px;
+  }
+
+  &_inactive {
+    background-color: $grey;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin: 0 20px;
+      background-color: $dark-grey;
+    }
+
+    &:last-child::after {
+      content: "";
+      display: none;
+    }
+  }
+}
+
+.feature-item__title,
+.feature-item__caption,
+.feature-item__description {
+  padding: $base-padding;
+  text-align: center;
+}
+
+.feature-item__title {
+  line-height: 1.44;
+}
+
+.feature-item__caption {
+  margin-top: 17px;
+}
+
+.feature-item__description {
+  padding-top: 21px;
+  padding-bottom: 32px;
+  line-height: 1.5;
+}

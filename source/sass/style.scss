@@ -1,15 +1,25 @@
 @import "common";
 @import "fonts";
+@import "feature-blocks/features";
+@import "feature-blocks/feature-item";
+@import "feature-blocks/feature-content-item";
+@import "feature-blocks/feature-content-list";
+@import "feature-blocks/feature-preview";
 @import "main-navigation-blocks/main-navigation";
 @import "main-navigation-blocks/main-navigation-list";
 @import "main-navigation-blocks/toggle-button";
+@import "other-blocks/button";
 @import "other-blocks/copyright";
 @import "other-blocks/logo";
+@import "other-blocks/map-preview";
 @import "other-blocks/promo-image";
+@import "other-blocks/search";
+@import "other-blocks/section-header";
 @import "other-blocks/socials";
 @import "page-blocks/page-body";
 @import "page-blocks/page-footer";
 @import "page-blocks/page-header";
+@import "page-blocks/page-main";
 @import "variables";
 
 * {
