@@ -8,7 +8,7 @@
 }
 
 .socials__link {
-  @include button($font-size-18);
+  @include button($title-size-base);
   width: 46px;
   height: 48px;
 }

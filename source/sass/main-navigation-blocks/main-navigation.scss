@@ -24,7 +24,7 @@
 }
 
 .main-navigation__link {
-  @include button($font-size-18);
+  @include button($title-size-base);
   min-height: 55px;
   margin-bottom: 1px;
   line-height: 2.22;
