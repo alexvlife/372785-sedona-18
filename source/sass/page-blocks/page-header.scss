@@ -14,8 +14,15 @@ $image-margin-top: -27px;
   margin-top: $image-margin-top;
 }
 
-.page-header__toggle-button {
+.page-header__nav-button {
   position: absolute;
   right: 20px;
-  margin-top: $image-margin-top - $toggle-button-height - 18px;
+
+  &_open {
+    margin-top: $image-margin-top - $toggle-button-height - 18px;
+  }
+
+  &_close {
+    top: 17px;
+  }
 }

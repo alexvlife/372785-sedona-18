@@ -8,38 +8,43 @@
   <body class="page-body">
 
     <header class="page-body__header page-header">
-      <nav class="page-header__navigation main-navigation">
-        <ul class="main-navigation__list main-navigation-list">
-          <li class="main-navigation-list__item">
-            <a class="main-navigation-list__link" href="index.html">Главная</a>
+      <nav class="page-header__navigation main-navigation-container">
+        <ul class="main-navigation-container__list main-navigation">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">Главная</a>
           </li>
-          <li class="main-navigation-list__item">
-            <a class="main-navigation-list__link" href="photo.html">Фото и видео</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="main-navigation-list__item main-navigation-list__item_active">
-            <a class="main-navigation-list__link" href="#">Форма отзыва</a>
+          <li class="main-navigation__item main-navigation__item_active">
+            <a class="main-navigation__link" href="#">Форма отзыва</a>
           </li>
-          <li class="main-navigation-list__item">
-            <a class="main-navigation-list__link" href="https://htmlacademy.ru" target="_blank">Html Academy</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="https://htmlacademy.ru" target="_blank">Html Academy</a>
           </li>
         </ul>
-
-        <button
-          class="main-navigation__toggle-button toggle-button toggle-button_close toggle-button_hide"
-          type="button" title="Свернуть меню">
-        </button>
       </nav>
 
-      <a class="page-header__logo logo" href="index.html" title="City of Sedona">
-        <img
-          class="logo__image"
-          src="img/logo-sedona-mobile.svg"
-          width="102"
-          height="83"
-          alt="Логотип «City of Sedona»">
-      </a>
+      <div class="page-header__logo logo">
+        <a class="logo__link" href="index.html" title="City of Sedona">
+          <img
+            class="logo__image"
+            src="img/logo-sedona-mobile.svg"
+            width="102"
+            height="83"
+            alt="Логотип «City of Sedona»">
+        </a>
+      </div>
 
-      <button class="page-header__toggle-button toggle-button toggle-button_open" type="button" title="Развернуть меню"></button>
+      <button
+        class="page-header__nav-button page-header__nav-button_open toggle-button toggle-button_open"
+        type="button" title="Развернуть меню">
+      </button>
+
+      <button
+        class="page-header__nav-button page-header__nav-button_close toggle-button toggle-button_close toggle-button_hide"
+        type="button" title="Свернуть меню">
+      </button>
 
       <div class="page-header__image promo-image promo-image_secondary" title="Sedona">
         <span class="visually-hidden">Welcome to the gorgeous Sedona</span>
