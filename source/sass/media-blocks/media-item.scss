@@ -1,0 +1,23 @@
+.media-item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.media-item__image {
+  order: 4;
+}
+
+.media-item__title {
+  order: 3;
+  margin-top: 18px;
+}
+
+.media-item__caption {
+  order: 2;
+  margin-top: 6px;
+}
+
+.media-item__rating {
+  order: 1;
+  margin-top: 10px;
+}

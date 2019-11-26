@@ -1,0 +1,19 @@
+@import "../variables";
+
+.toggle-button {
+  width: $toggle-button-width;
+  height: $toggle-button-height;
+  background-repeat: no-repeat;
+
+  &_open {
+    background-image: url("../img/icon-menu.svg");
+  }
+
+  &_close {
+    background-image: url("../img/icon-cross.svg");
+  }
+
+  &_hide {
+    display: none;
+  }
+}

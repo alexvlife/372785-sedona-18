@@ -1,0 +1,28 @@
+@import "../variables";
+
+$image-margin-top: -27px;
+
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  margin: 0 auto;
+}
+
+.page-header__image {
+  margin-top: $image-margin-top;
+}
+
+.page-header__nav-button {
+  position: absolute;
+  right: 20px;
+
+  &_open {
+    margin-top: $image-margin-top - $toggle-button-height - 18px;
+  }
+
+  &_close {
+    top: 17px;
+  }
+}

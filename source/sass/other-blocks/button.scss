@@ -1,0 +1,32 @@
+@import "../variables";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: $font-family-bold;
+  font-size: $title-size-base;
+  color: $button-text-color-base;
+  background-color: $button-bg-color-base;
+
+  &_size_large {
+    width: 280px;
+    min-height: 58px;
+  }
+
+  &:hover {
+    color: $button-text-color-hover;
+    background-color: $grey-blue;
+  }
+
+  &:active {
+    color: $button-text-color-down;
+    background-color: $button-bg-color-down;
+  }
+
+  &:disabled {
+    color: $button-text-color-disabled;
+    background-color: $button-bg-color-disabled;
+  }
+}

@@ -1,0 +1,75 @@
+@import "../variables";
+
+.feature {
+  padding-top: 33px;
+
+  &:first-child {
+    padding-top: 80px;
+  }
+
+  &:first-child > .feature__description {
+    margin-bottom: 45px;
+  }
+
+  &_active {
+    padding-top: 45px;
+    background-color: $block-bg-color;
+  }
+
+  &_active > .feature__title,
+  &_active > .feature__caption,
+  &_active > .feature__description {
+    color: $page-text-color-inverse;
+  }
+
+  &_active > .feature__description {
+    margin-bottom: 42px;
+  }
+
+  &_inactive {
+    background-color: $grey;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin: 0 20px;
+      background-color: $dark-grey;
+    }
+
+    &:last-child::after {
+      background-color: inherit;
+    }
+  }
+}
+
+.feature__content-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $page-bg-color;
+}
+
+.feature__content {
+  align-self: center;
+}
+
+.feature__title,
+.feature__caption,
+.feature__description {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.feature__title {
+  line-height: 1.44;
+}
+
+.feature__caption {
+  margin-top: 17px;
+}
+
+.feature__description {
+  margin-top: 21px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}

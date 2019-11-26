@@ -1,0 +1,66 @@
+/* all colors */
+$black: #000000;
+$black-30: rgba(0, 0, 0, 0.3);
+$black-medium: #333333;
+
+$brown: #766357;
+$brown-30: rgba(118, 99, 87, 0.3);
+$dark-brown: #604e43;
+
+$grey: #e5e5e5;
+$light-grey: #f2f2f2;
+$dark-grey: #d5d5d5;
+
+$grey-blue: #669ec0;
+$light-grey-blue: #81b3d2;
+$dark-grey-blue: #5496bd;
+
+$white: #ffffff;
+$white-30: rgba(255, 255, 255, 0.3);
+
+/* text colors */
+$page-text-color-base: $black;
+$page-text-color-inverse: $white;
+$page-text-color-secondary: $black-medium;
+
+$button-text-color-base: $white;
+$button-text-color-hover: $white;
+$button-text-color-down: $white-30;
+$button-text-color-disabled: $white;
+
+/* background colors */
+$page-bg-color: $white;
+$block-bg-color: $light-grey-blue;
+
+$separate-line-bg: $grey;
+
+$button-bg-color-base: $light-grey-blue;
+$button-bg-color-hover: $grey-blue;
+$button-bg-color-down: $dark-grey-blue;
+$button-bg-color-disabled: $grey;
+
+$form-control-bg-base: $light-grey;
+$form-control-bg-active: $white;
+$form-control-bg-hover: $grey;
+$form-control-bg-down: $dark-grey;
+
+/* font */
+$font-family-regular: "PTSans-Regular", "Arial", sans-serif;
+$font-family-bold: "PTSans-Bold", "Arial", sans-serif;
+
+$font-size-14: 14px;
+$font-size-18: 18px;
+$font-size-21: 21px;
+
+$text-size-base: $font-size-14;
+$title-size-base: $font-size-18;
+$title-size-increased: $font-size-21;
+$title-size-secondary: $font-size-14;
+
+/* size */
+$page-min-width: 320px;
+$toggle-button-width: 23px;
+$toggle-button-height: 22px;
+
+/* padding */
+$base-padding: 0 20px;

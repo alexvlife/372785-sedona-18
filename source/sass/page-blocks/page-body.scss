@@ -1,0 +1,10 @@
+@import "../variables";
+
+.page-body {
+  min-width: $page-min-width;
+  font-family: $font-family-regular;
+  font-size: $text-size-base;
+  color: $page-text-color-secondary;
+  text-transform: uppercase;
+  background-color: $page-bg-color;
+}

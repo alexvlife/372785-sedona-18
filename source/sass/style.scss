@@ -1,0 +1,49 @@
+@import "common";
+@import "fonts";
+@import "feature-blocks/features";
+@import "feature-blocks/feature";
+@import "feature-blocks/feature-item";
+@import "feature-blocks/feature-content";
+@import "feature-blocks/feature-preview";
+@import "main-navigation-blocks/main-navigation";
+@import "main-navigation-blocks/main-navigation-container";
+@import "main-navigation-blocks/toggle-button";
+@import "media-blocks/media-item";
+@import "media-blocks/media-list";
+@import "media-blocks/rating";
+@import "other-blocks/button";
+@import "other-blocks/copyright";
+@import "other-blocks/logo";
+@import "other-blocks/map-preview";
+@import "other-blocks/promo-image";
+@import "other-blocks/search";
+@import "other-blocks/section-header";
+@import "other-blocks/socials";
+@import "other-blocks/text";
+@import "other-blocks/title";
+@import "page-blocks/page-body";
+@import "page-blocks/page-footer";
+@import "page-blocks/page-header";
+@import "page-blocks/page-main";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: $page-text-color-secondary;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+}
