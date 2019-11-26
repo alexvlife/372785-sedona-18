@@ -1,30 +1,23 @@
 .media-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.media-item__title,
-.media-item__caption,
-.media-item__rating {
-  width: 280px;
+  flex-direction: column-reverse;
 }
 
 .media-item__image {
-  order: 1;
+  order: 4;
 }
 
 .media-item__title {
-  order: 2;
+  order: 3;
   margin-top: 18px;
 }
 
 .media-item__caption {
-  order: 3;
+  order: 2;
   margin-top: 6px;
 }
 
 .media-item__rating {
-  order: 4;
+  order: 1;
   margin-top: 10px;
 }

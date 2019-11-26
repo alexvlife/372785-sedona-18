@@ -1,12 +1,10 @@
-.rating {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+.rating__like-action {
+  position: relative;
+  display: inline-block;
+  margin-right: 35px;
 }
 
-.rating__like-action {
-  display: block;
-  width: 23px;
-  height: 21px;
-  margin-right: 13px;
+.rating__like-icon {
+  position: absolute;
+  bottom: -4px;
 }
