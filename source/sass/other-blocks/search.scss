@@ -1,18 +1,12 @@
 @import "../variables";
 
 .search {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 33px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
-.search__title,
-.search__description {
-  padding: $base-padding;
-  text-align: center;
+.search__header {
+  padding: 33px 20px 49px;
 }
 
 .search__title {
@@ -25,5 +19,5 @@
 }
 
 .search__button {
-  margin: 40px 20px 49px 20px;
+  margin: 40px auto 0;
 }
