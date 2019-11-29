@@ -13,6 +13,7 @@
 @import "media-blocks/rating";
 @import "other-blocks/button";
 @import "other-blocks/copyright";
+@import "other-blocks/demo";
 @import "other-blocks/logo";
 @import "other-blocks/map-preview";
 @import "other-blocks/promo-image";
@@ -25,6 +26,10 @@
 @import "page-blocks/page-footer";
 @import "page-blocks/page-header";
 @import "page-blocks/page-main";
+@import "player/player-action";
+@import "player/player-actions";
+@import "player/player-progress-bar";
+@import "player/video-player";
 @import "variables";
 
 * {

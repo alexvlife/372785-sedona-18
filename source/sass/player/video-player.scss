@@ -1,0 +1,10 @@
+.video-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player__control-panel {
+  margin-top: -45px;
+}

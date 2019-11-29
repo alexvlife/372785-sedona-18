@@ -1,0 +1,21 @@
+@import "../variables";
+
+.player-action {
+  background-repeat: no-repeat;
+  height: 20px;
+
+  &_replay {
+    width: 16px;
+    background-image: url("../img/icon-video-replay.svg");
+  }
+
+  &_subtitles {
+    width: 32px;
+    background-image: url("../img/icon-video-subtitles.svg");
+  }
+
+  &_fullscreen {
+    width: 20px;
+    background-image: url("../img/icon-video-fullscreen.svg");
+  }
+}
