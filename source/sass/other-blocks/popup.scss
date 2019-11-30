@@ -1,0 +1,53 @@
+@import "../variables";
+
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $black-30;
+
+  &_hide {
+    display: none;
+  }
+
+  &_show {
+    display: flex;
+  }
+}
+
+.popup__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+  text-align: center;
+  background-color: $page-bg-color;
+}
+
+.popup__header {
+  margin: 0 25px;
+}
+
+.popup__button-wrapper {
+  align-self: stretch;
+  background-color: $light-grey;
+
+  &_bg_none {
+    background-color: transparent;
+
+    & > .popup__button {
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.popup__button {
+  margin: 20px auto;
+}
