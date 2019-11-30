@@ -1,0 +1,100 @@
+.form-control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+
+  &_icon_base {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 58px;
+      height: 58px;
+      background-color: $form-control-bg-hover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &_icon_phone::after {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &_icon_email::after {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.form-control__label {
+  font-size: $font-size-14;
+
+  &_field_text {
+    margin-right: 14px;
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-right: 18.5px;
+    }
+  }
+
+  &_radio,
+  &_check {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      box-sizing: border-box;
+      display: inline-block;
+      width: 51px;
+      height: 51px;
+      margin-right: 25px;
+      border: 17px solid $form-control-bg-base;
+      background-color: $form-control-bg-base;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &_radio::before {
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    border-color: $form-control-bg-hover;
+    background-color: $form-control-bg-hover;
+  }
+
+  &:active::before {
+    border-color: $form-control-bg-down;
+    background-color: $black-30;
+  }
+
+  &_check:active::before {
+    border-color: $form-control-bg-down;
+    background-color: $form-control-bg-down;
+    background-image: url("../img/tick-copy-7.png");
+  }
+}
+
+.form-control__field-text {
+  flex-grow: 1;
+}
+
+.form-control__field-radio,
+.form-control__field-check {
+  display: none;
+}
+
+.form-control__field-radio:checked + .form-control__label_radio::before {
+  background-color: $black-medium;
+}
+
+.form-control__field-check:checked + .form-control__label_check::before {
+  background-image: url("../img/tick-copy-6.png");
+}

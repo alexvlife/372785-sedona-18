@@ -1,0 +1,20 @@
+@import "../variables";
+
+.form-field-text {
+  height: 58px;
+  padding: 0 22px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: $form-control-bg-base;
+  background-color: $form-control-bg-base;
+
+  &:hover {
+    background-color: $form-control-bg-hover;
+    border-color: $form-control-bg-hover;
+  }
+
+  &:focus {
+    background-color: $form-control-bg-active;
+    border-color: $form-control-bg-hover;
+  }
+}
