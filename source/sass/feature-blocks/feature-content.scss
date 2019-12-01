@@ -1,4 +1,23 @@
+@import "../variables";
+
 .feature-content {
   padding: 20px;
   background-color: $page-bg-color;
+}
+
+@media (min-width: $tablet_width) {
+  .feature-content {
+    display: flex;
+    padding: 0;
+  }
+
+  .feature-content__item {
+    &:first-child {
+      order: -3;
+    }
+
+    &:last-child {
+      order: -2;
+    }
+  }
 }

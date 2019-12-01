@@ -1,16 +1,36 @@
-.features {
-  position: relative;
+@import "../variables";
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 37px;
-    background-image: url("../img/bg-triangle.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__item {
+  &:first-child {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 38px;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
   }
 }

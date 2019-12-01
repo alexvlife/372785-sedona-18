@@ -1,3 +1,17 @@
-.page-main__feature-list {
-  margin-top: -23px;
+@import "../variables";
+
+.page-main__header {
+  margin: 43px 32px 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    margin: 51px 139px 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    margin: 51px 353px 55px;
+  }
 }

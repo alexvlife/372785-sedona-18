@@ -1,3 +1,5 @@
+@import "../variables";
+
 .feature-item {
   padding: 20px 0;
 }
@@ -33,4 +35,40 @@
 
 .feature-item__description {
   margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .feature-item {
+    width: 33.3%;
+    padding: 20px 65px;
+    text-align: center;
+  }
+
+  .feature-item__title,
+  .feature-item__description {
+    padding-left: 0;
+  }
+
+  .feature-item__title {
+    justify-content: center;
+    padding-top: 90px;
+
+    &_house {
+      min-height: 72px;
+      background-size: 75px 72px;
+      background-position: 50% 0;
+    }
+
+    &_gift {
+      min-height: 75px;
+      background-size: 64px 75px;
+      background-position: 50% 0;
+    }
+
+    &_food {
+      min-height: 68px;
+      background-size: 77px 68px;
+      background-position: 50% 0;
+    }
+  }
 }
