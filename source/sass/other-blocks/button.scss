@@ -11,6 +11,10 @@
   color: $button-text-color-base;
   background-color: $button-bg-color-base;
 
+  &_nav {
+    min-height: 55px;
+  }
+
   &_size_large {
     width: 280px;
     min-height: 58px;
@@ -33,5 +37,51 @@
   &:disabled {
     color: $button-text-color-disabled;
     background-color: $button-bg-color-disabled;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &_nav {
+      width: 153px;
+      font-size: $text-size-base;
+      color: $nav-link-text-color-base;
+    }
+
+    &_nav,
+    &_nav:hover,
+    &_nav:active {
+      background-color: $page-bg-color;
+    }
+
+    &_nav-base {
+      &:hover {
+        color: $nav-link-text-color-hover;
+      }
+
+      &:active {
+        color: $nav-link-text-color-down;
+      }
+    }
+
+    &_nav-visited {
+      color: $nav-visited-link-text-color-base;
+
+      &:hover {
+        color: $nav-visited-link-text-color-hover;
+      }
+
+      &:active {
+        color: $nav-visited-link-text-color-down;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &_nav {
+      width: 239px;
+    }
   }
 }
