@@ -12,7 +12,7 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
-    min-height: initial;
+    min-height: 120px;
     padding: 36px 20px;
   }
 }

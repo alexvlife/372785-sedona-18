@@ -12,11 +12,11 @@
   }
 
   .feature-content__item {
-    &:first-child {
+    &_first-child {
       order: -3;
     }
 
-    &:last-child {
+    &_last-child {
       order: -2;
     }
   }

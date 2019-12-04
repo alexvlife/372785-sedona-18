@@ -1,0 +1,31 @@
+@import "../variables";
+
+.media-image-container,
+.media-image-container__item {
+  width: 280px;
+  height: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .media-image-container,
+  .media-image-container__item {
+    width: 324px;
+    height: 267px;
+
+    &_size_large {
+      width: 648px;
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media-image-container,
+  .media-image-container__item {
+    width: 400px;
+
+    &_size_large {
+      width: 1200px;
+    }
+  }
+}

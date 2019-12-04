@@ -13,9 +13,11 @@
       margin: 0 20px;
       background-color: $dark-grey;
     }
+  }
 
-    &:last-child::after {
-      background-color: inherit;
+  &_inactive-last {
+    &::after {
+      background-color: transparent;
     }
   }
 }
@@ -24,7 +26,7 @@
   margin: 45px 20px 42px;
 }
 
-.feature_inactive > .feature__header {
+.feature__header_inactive {
   margin: 33px 20px 32px;
 }
 
@@ -42,10 +44,7 @@
   .feature {
     display: flex;
     flex-wrap: wrap;
-
-    &:not(.feature_inactive) {
-      width: 100%;
-    }
+    width: 100%;
 
     &_inactive {
       width: 33.3%;
@@ -58,8 +57,8 @@
   }
 
   .feature__header,
-  .feature_inactive > .feature__header {
-    margin: initial;
+  .feature__header_inactive {
+    margin: 0;
   }
 
   .feature__header {

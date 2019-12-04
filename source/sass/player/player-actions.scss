@@ -13,7 +13,7 @@
 .player-actions__wrapper {
   display: flex;
 
-  &:nth-child(2) {
+  &_central-item {
     margin-left: auto;
     margin-right: 31px;
   }

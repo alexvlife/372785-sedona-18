@@ -6,7 +6,7 @@
 }
 
 .features__item {
-  &:first-child {
+  &_first-child {
     &::before {
       content: "";
       display: block;
@@ -27,7 +27,7 @@
   }
 
   .features__item {
-    &:first-child {
+    &_first-child {
       &::before {
         display: none;
       }

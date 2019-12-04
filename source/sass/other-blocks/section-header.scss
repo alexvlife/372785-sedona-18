@@ -25,10 +25,6 @@
   color: $page-text-color-inverse;
 }
 
-.section-header_color_inverse > .section-header__title {
-  color: $page-text-color-inverse;
-}
-
 @media (min-width: $tablet-width) {
   .section-header_type_feature {
     width: 256px;

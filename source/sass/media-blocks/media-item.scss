@@ -5,118 +5,25 @@
   flex-direction: column-reverse;
 }
 
-.media-item__image {
-  order: 4;
-}
-
-.media-item__title {
-  order: 3;
-  margin-top: 18px;
-}
-
-.media-item__caption {
-  order: 2;
-  margin-top: 6px;
-}
-
-.media-item__rating {
-  order: 1;
-  margin-top: 10px;
+.media-item__info {
+  margin-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .media-item {
-    position: relative;
-    padding-bottom: 17px;
-    background-color: $light-grey;
-  }
-
-  .media-item__image {
-    background-repeat: no-repeat;
-  }
-
-  .media-item__rating {
-    position: absolute;
-    right: 30px;
-    bottom: 29px;
-    z-index: 10;
-  }
-
-  .media-item:first-child > .media-item__rating {
-    right: 20px;
-  }
-
-  .media-item__title,
-  .media-item__caption {
-    margin-left: 20px;
-  }
-
-  .media-item:nth-child(1) > .media-item__image {
-    width: 648px;
-    height: 400px;
-    background-image: url("../img/photo-sunset-tablet@1x.jpg");
-  }
-
-  .media-item:not(:nth-child(1)) > .media-item__image {
-    width: 324px;
-    height: 267px;
-  }
-
-  .media-item:nth-child(2) > .media-item__image {
-    background-image: url("../img/photo-cactus-tablet@1x.jpg");
-  }
-
-  .media-item:nth-child(3) > .media-item__image {
-    background-image: url("../img/photo-roads-tablet@1x.jpg");
-  }
-
-  .media-item:nth-child(4) > .media-item__image {
-    background-image: url("../img/photo-bridge-tablet@1x.jpg");
-  }
-
-  .media-item:nth-child(odd):not(:nth-child(1)) {
-    background-color: $grey;
+  .media-item__info {
+    margin-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .media-item {
-    padding-bottom: 0;
+    position: relative;
   }
 
-  .media-item > .media-item__title,
-  .media-item > .media-item__caption {
+  .media-item__info {
     position: absolute;
-    color: $page-text-color-inverse;
-    z-index: 10;
-  }
-
-  .media-item__title {
-    bottom: 44px;
-  }
-
-  .media-item__caption {
-    bottom: 20px;
-  }
-
-  .media-item:nth-child(1) > .media-item__image {
-    width: 1200px;
-    background-image: url("../img/photo-sunset-desktop@1x.jpg");
-  }
-
-  .media-item:not(:nth-child(1)) > .media-item__image {
-    width: 400px;
-  }
-
-  .media-item:nth-child(2) > .media-item__image {
-    background-image: url("../img/photo-cactus-desktop@1x.jpg");
-  }
-
-  .media-item:nth-child(3) > .media-item__image {
-    background-image: url("../img/photo-roads-desktop@1x.jpg");
-  }
-
-  .media-item:nth-child(4) > .media-item__image {
-    background-image: url("../img/photo-bridge-desktop@1x.jpg");
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
