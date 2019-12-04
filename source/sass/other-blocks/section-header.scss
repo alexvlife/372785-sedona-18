@@ -1,5 +1,4 @@
 .section-header {
-  padding: 40px 20px 33px;
   text-align: center;
 }
 
@@ -7,7 +6,33 @@
   line-height: 1.44;
 }
 
+.section-header__caption {
+  margin-top: 18px;
+  line-height: 1.71;
+}
+
 .section-header__description {
   margin-top: 23px;
   line-height: 1.71;
+}
+
+.section-header__title-line-break {
+  display: none;
+}
+
+.section-header_color_inverse {
+  background-color: $block-bg-color;
+  color: $page-text-color-inverse;
+}
+
+@media (min-width: $tablet-width) {
+  .section-header_type_feature {
+    width: 256px;
+    min-height: 256px;
+    padding: 42px 46px;
+  }
+
+  .section-header__title-line-break {
+    display: initial;
+  }
 }

@@ -31,20 +31,15 @@
 }
 
 .popup__header {
-  margin: 0 25px;
+  margin: 25px 25px 0;
 }
 
 .popup__button-wrapper {
   align-self: stretch;
   background-color: $light-grey;
 
-  &_bg_none {
+  &_medium {
     background-color: transparent;
-
-    & > .popup__button {
-      margin-top: 0;
-      margin-bottom: 35px;
-    }
   }
 }
 

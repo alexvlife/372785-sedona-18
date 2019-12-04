@@ -23,6 +23,14 @@ $page-text-color-base: $black;
 $page-text-color-inverse: $white;
 $page-text-color-secondary: $black-medium;
 
+$nav-link-text-color-base: $black;
+$nav-link-text-color-hover: $light-grey-blue;
+$nav-link-text-color-down: $black-30;
+
+$nav-visited-link-text-color-base: $brown;
+$nav-visited-link-text-color-hover: $dark-brown;
+$nav-visited-link-text-color-down: $brown-30;
+
 $button-text-color-base: $white;
 $button-text-color-hover: $white;
 $button-text-color-down: $white-30;
@@ -58,6 +66,9 @@ $title-size-increased: $font-size-21;
 $title-size-secondary: $font-size-14;
 
 /* size */
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
 $page-min-width: 320px;
 $toggle-button-width: 23px;
 $toggle-button-height: 22px;

@@ -1,0 +1,19 @@
+@import "../variables";
+
+.media-info-title {
+  display: flex;
+  flex-direction: column;
+  color: $page-text-color-base;
+}
+
+.media-info-title__caption {
+  margin-top: 6px;
+  color: $page-text-color-secondary;
+}
+
+@media (min-width: $desktop-width) {
+  .media-info-title,
+  .media-info-title__caption {
+    color: $page-text-color-inverse;
+  }
+}

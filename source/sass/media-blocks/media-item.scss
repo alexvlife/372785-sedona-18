@@ -1,23 +1,29 @@
+@import "../variables";
+
 .media-item {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.media-item__image {
-  order: 4;
+.media-item__info {
+  margin-top: 20px;
 }
 
-.media-item__title {
-  order: 3;
-  margin-top: 18px;
+@media (min-width: $tablet-width) {
+  .media-item__info {
+    margin-top: 0;
+  }
 }
 
-.media-item__caption {
-  order: 2;
-  margin-top: 6px;
-}
+@media (min-width: $desktop-width) {
+  .media-item {
+    position: relative;
+  }
 
-.media-item__rating {
-  order: 1;
-  margin-top: 10px;
+  .media-item__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }

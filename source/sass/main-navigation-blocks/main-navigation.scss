@@ -1,11 +1,6 @@
 @import "../variables";
 
-.main-navigation__item {
-  background-color: $button-bg-color-base;
-}
-
 .main-navigation__link {
-  min-height: 55px;
   line-height: 2.22;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
@@ -16,5 +11,21 @@
 
   &_bottom {
     border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    display: flex;
+    justify-content: flex-start;
+    background-color: $page-bg-color;
+  }
+
+  .main-navigation__link {
+    border: none;
+  }
+
+  .main-navigation__item:nth-child(3) {
+    margin-left: auto;
   }
 }

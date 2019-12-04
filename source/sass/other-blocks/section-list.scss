@@ -36,3 +36,32 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .section-list {
+    &_media {
+      flex-direction: row;
+      align-items: unset;
+      flex-wrap: wrap;
+      width: 648px;
+      padding: 20px 0;
+    }
+  }
+
+  .section-list_media::before,
+  .section-list__item_media::after {
+    display: none;
+  }
+
+  .section-list__item_media {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-list {
+    &_media {
+      width: $desktop-width;
+    }
+  }
+}

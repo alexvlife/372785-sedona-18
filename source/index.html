@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
@@ -11,16 +12,16 @@
       <nav class="page-header__navigation main-navigation-container">
         <ul class="main-navigation-container__list main-navigation">
           <li class="main-navigation__item main-navigation__item_active">
-            <a class="main-navigation__link main-navigation__link_top button" href="#">Главная</a>
+            <a class="main-navigation__link main-navigation__link_top button button_nav button_nav-visited" href="#">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link button" href="photo.html">Фото и видео</a>
+            <a class="main-navigation__link button button_nav button_nav-base" href="photo.html">Фото и видео</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link button" href="form.html">Форма отзыва</a>
+            <a class="main-navigation__link button button_nav button_nav-base" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link_bottom button" href="https://htmlacademy.ru" target="_blank">Html Academy</a>
+            <a class="main-navigation__link main-navigation__link_bottom button button_nav button_nav-base" href="https://htmlacademy.ru" target="_blank">Html Academy</a>
           </li>
         </ul>
       </nav>
@@ -28,7 +29,7 @@
       <div class="page-header__logo logo">
         <a class="logo__link" href="#" title="City of Sedona">
           <img
-            class="logo__image"
+            class="logo__image logo-image"
             src="img/logo-sedona-mobile.svg"
             width="102"
             height="83"
@@ -60,16 +61,18 @@
 
       <ol class="page-main__feature-list features">
 
-        <li class="features__item feature feature_active">
-          <h2 class="feature__title title">Настоящий городок</h2>
-          <p class="feature__caption">- №1 -</p>
-          <p class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        <li class="features__item features__item_first-child feature">
+          <header class="feature__header section-header section-header_type_feature section-header_color_inverse">
+            <h2 class="section-header__title title">Настоящий городок</h2>
+            <p class="section-header__caption">- №1 -</p>
+            <p class="section-header__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </header>
 
           <div class="feature__preview feature-preview feature-preview_house"></div>
 
           <div class="feature__content-container">
             <ul class="feature__content feature-content">
-              <li class="feature-content__item feature-item">
+              <li class="feature-content__item feature-content__item_first-child feature-item">
                 <h3 class="feature-item__title feature-item__title_house title">Жилье</h3>
                 <p class="feature-item__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
@@ -77,7 +80,7 @@
                 <h3 class="feature-item__title feature-item__title_gift title">Сувениры</h3>
                 <p class="feature-item__description">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="feature-content__item feature-item">
+              <li class="feature-content__item feature-content__item_last-child feature-item">
                 <h3 class="feature-item__title feature-item__title_food title">Еда</h3>
                 <p class="feature-item__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
@@ -85,30 +88,38 @@
           </div>
         </li>
 
-        <li class="features__item feature feature_active">
-          <h2 class="feature__title title">Там есть мост дьявола</h2>
-          <p class="feature__caption">- №2 -</p>
-          <p class="feature__description">Да, по нему можно пройти. Если вы осмелитесь, конечно</p>
+        <li class="features__item feature">
+          <header class="feature__header section-header section-header_type_feature section-header_color_inverse">
+            <h2 class="section-header__title title">Там есть мост дьявола</h2>
+            <p class="section-header__caption">- №2 -</p>
+            <p class="section-header__description">Да, по нему можно пройти. Если вы осмелитесь, конечно</p>
+          </header>
 
-          <div class="feature__preview feature-preview feature-preview_bridge" title="Мост дьявола в Седоне"></div>
+          <div class="feature__preview feature-preview_order_first feature-preview feature-preview_bridge" title="Мост дьявола в Седоне"></div>
         </li>
 
         <li class="features__item feature feature_inactive">
-          <h2 class="feature__title title">Небольшая площадь</h2>
-          <p class="feature__caption">- №3 -</p>
-          <p class="feature__description">Все интересные места находятся очень близко</p>
+          <header class="feature__header feature__header_inactive section-header section-header_type_feature">
+            <h2 class="section-header__title title">Небольшая <br class="section-header__title-line-break">площадь</h2>
+            <p class="section-header__caption">- №3 -</p>
+            <p class="section-header__description">Все интересные места находятся очень близко</p>
+          </header>
         </li>
 
         <li class="features__item feature feature_inactive">
-          <h2 class="feature__title title">Красивая дорога</h2>
-          <p class="feature__caption">- №4 -</p>
-          <p class="feature__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <header class="feature__header feature__header_inactive section-header section-header_type_feature">
+            <h2 class="section-header__title title">Красивая <br class="section-header__title-line-break">дорога</h2>
+            <p class="section-header__caption">- №4 -</p>
+            <p class="section-header__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </header>
         </li>
 
-        <li class="features__item feature feature_inactive">
-          <h2 class="feature__title title">Мало туристов</h2>
-          <p class="feature__caption">- №5 -</p>
-          <p class="feature__description">Большинство едет в Гранд Каньен и толпится там</p>
+        <li class="features__item feature feature_inactive feature_inactive-last">
+          <header class="feature__header feature__header_inactive section-header section-header_type_feature">
+            <h2 class="section-header__title title">Мало <br class="section-header__title-line-break">туристов</h2>
+            <p class="section-header__caption">- №5 -</p>
+            <p class="section-header__description">Большинство едет в Гранд Каньен и толпится там</p>
+          </header>
         </li>
 
       </ol>
@@ -133,7 +144,7 @@
 
       <ul class="page-footer__socials socials">
         <li class="socials__item">
-          <a href="https://twitter.com" class="socials__link button" target="_blank" title="Мы в Twitter">
+          <a href="https://twitter.com" class="socials__link button button_social" target="_blank" title="Мы в Twitter">
             <img
               class="socials__logo"
               src="img/icon-twitter.svg"
@@ -143,7 +154,7 @@
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://www.facebook.com" class="socials__link button" target="_blank" title="Мы в Facebook">
+          <a href="https://www.facebook.com" class="socials__link button button_social" target="_blank" title="Мы в Facebook">
             <img
               class="socials__logo"
               src="img/icon-facebook.svg"
@@ -152,8 +163,8 @@
               alt="Логотип «Facebook»">
           </a>
         </li>
-        <li class="socials__item">
-          <a href="https://www.youtube.com" class="socials__link button" target="_blank" title="Мы на YouTube">
+        <li class="socials__item socials__item_last-child">
+          <a href="https://www.youtube.com" class="socials__link button button_social" target="_blank" title="Мы на YouTube">
             <img
               class="socials__logo"
               src="img/icon-youtube.svg"

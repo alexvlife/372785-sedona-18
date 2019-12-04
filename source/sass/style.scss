@@ -14,8 +14,12 @@
 @import "main-navigation-blocks/main-navigation";
 @import "main-navigation-blocks/main-navigation-container";
 @import "main-navigation-blocks/toggle-button";
+@import "media-blocks/media-image-container";
+@import "media-blocks/media-info";
+@import "media-blocks/media-info-title";
 @import "media-blocks/media-item";
 @import "media-blocks/rating";
+@import "media-blocks/rating-icon";
 @import "other-blocks/button";
 @import "other-blocks/copyright";
 @import "other-blocks/demo";
@@ -52,6 +56,7 @@ a {
   color: $page-text-color-secondary;
 }
 
+ol,
 ul {
   list-style: none;
 }

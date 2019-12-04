@@ -26,3 +26,20 @@ $image-margin-top: -27px;
     top: 17px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    align-self: center;
+  }
+
+  .page-header__nav-button {
+    display: none;
+  }
+}
