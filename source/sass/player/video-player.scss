@@ -3,8 +3,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: 320px;
+  height: 266px;
 }
 
-.video-player__control-panel {
-  margin-top: -45px;
+@media (min-width: $tablet-width) {
+  .video-player {
+    width: 648px;
+    height: 500px;
+  }
+
+  .video-player__control-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-player {
+    width: 800px;
+  }
 }

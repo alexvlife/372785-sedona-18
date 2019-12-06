@@ -38,9 +38,10 @@
 @import "page-blocks/page-header";
 @import "page-blocks/page-main";
 @import "player/player-action";
-@import "player/player-actions";
+@import "player/player-control-panel";
 @import "player/player-progress-bar";
 @import "player/video-player";
+@import "player/video-preview";
 @import "variables";
 
 * {

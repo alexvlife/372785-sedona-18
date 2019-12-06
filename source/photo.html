@@ -15,7 +15,7 @@
             <a class="main-navigation__link main-navigation__link_top button button_nav button_nav-base" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item main-navigation__item_active">
-            <a class="main-navigation__link button button_nav button_nav-visited" href="#">Фото и видео</a>
+            <a class="main-navigation__link button button_nav button_nav-visited">Фото и видео</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link button button_nav button_nav-base" href="form.html">Форма отзыва</a>
@@ -189,37 +189,36 @@
         </header>
 
         <section class="demo__preview video-player">
-
-          <img
-            class="video-player__preview"
-            src="img/video-mobile@1x.jpg"
-            width="321"
-            height="201"
-            alt="Предпросмотр видео">
-
-          <div class="video-player__control-panel player-control-panel">
-            <label class="player-control-panel__progress-bar player-progress-bar">
-              <input class="player-progress-bar__item" type="range" name="progress-bar">
-            </label>
-
-            <ul class="player-control-panel__action-list player-actions">
-              <li class="player-actions__wrapper">
-                <button
-                  class="player-actions__button player-action player-action_replay"
-                  type="button" title="Воспроизвести снова"></button>
-              </li>
-              <li class="player-actions__wrapper player-actions__wrapper_central-item">
-                <button
-                  class="player-actions__button player-action player-action_subtitles"
-                  type="button" title="Включить субтитры"></button>
-              </li>
-              <li class="player-actions__wrapper">
-                <button
-                  class="player-actions__button player-action player-action_fullscreen"
-                  type="button" title="Развернуть на весь экран"></button>
-              </li>
-            </ul>
+          <div class="video-player__preview video-preview">
+            <img
+              src="img/video-mobile@1x.jpg"
+              width="320"
+              height="200"
+              alt="Предпросмотр видео">
           </div>
+
+          <ul class="video-player__control-panel player-control-panel">
+            <li class="player-control-panel__wrapper">
+              <button
+                class="player-control-panel__button player-action player-action_replay"
+                type="button" title="Воспроизвести снова"></button>
+            </li>
+            <li class="player-control-panel__wrapper player-control-panel__wrapper_item_progress-bar">
+              <label class="player-control-panel__progress-bar player-progress-bar">
+                <input class="player-progress-bar__item" type="range" name="progress-bar">
+              </label>
+            </li>
+            <li class="player-control-panel__wrapper player-control-panel__wrapper_item_subtitles">
+              <button
+                class="player-control-panel__button player-action player-action_subtitles"
+                type="button" title="Включить субтитры"></button>
+            </li>
+            <li class="player-control-panel__wrapper">
+              <button
+                class="player-control-panel__button player-action player-action_fullscreen"
+                type="button" title="Развернуть на весь экран"></button>
+            </li>
+          </ul>
 
         </section>
       </article>
