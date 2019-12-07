@@ -23,11 +23,11 @@
 }
 
 .feature__header {
-  margin: 45px 20px 42px;
-}
+  margin: 41px 20px 40px;
 
-.feature__header_inactive {
-  margin: 33px 20px 32px;
+  &_inactive {
+    margin: 28px 33px 26px;
+  }
 }
 
 .feature__content-container {

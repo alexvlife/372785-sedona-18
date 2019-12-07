@@ -4,16 +4,22 @@
 
 .section-header__title {
   line-height: 1.44;
+  letter-spacing: 0.15px;
 }
 
 .section-header__caption {
-  margin-top: 18px;
+  margin-top: 6px;
   line-height: 1.71;
 }
 
 .section-header__description {
-  margin-top: 23px;
-  line-height: 1.71;
+  margin-top: 30px;
+  line-height: 1.77;
+
+  &_feature {
+    margin-top: 14px;
+    line-height: 1.61;
+  }
 }
 
 .section-header__title-line-break {

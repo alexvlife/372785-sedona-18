@@ -12,6 +12,7 @@
   background-color: $button-bg-color-base;
 
   &_nav {
+    box-sizing: content-box;
     min-height: 55px;
   }
 
