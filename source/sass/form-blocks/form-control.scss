@@ -47,6 +47,7 @@
   }
 
   &_field_contacts {
+    margin-top: 2px;
     margin-left: 22px;
   }
 
@@ -59,9 +60,9 @@
       content: "";
       box-sizing: border-box;
       display: inline-block;
-      width: 51px;
-      height: 51px;
-      margin-right: 25px;
+      width: 55px;
+      height: 55px;
+      margin-right: 23px;
       border: 17px solid $form-control-bg-base;
       background-color: $form-control-bg-base;
       background-repeat: no-repeat;

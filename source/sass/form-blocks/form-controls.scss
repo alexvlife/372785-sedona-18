@@ -8,6 +8,18 @@
 .form-controls__item {
   margin-bottom: 20px;
 
+  &_field-contacts {
+    margin-bottom: 11px;
+  }
+
+  &_field-opinion {
+    margin-bottom: 14px;
+  }
+
+  &_field-place {
+    margin-bottom: 25px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }

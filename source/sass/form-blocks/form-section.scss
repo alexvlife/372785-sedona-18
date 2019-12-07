@@ -1,14 +1,29 @@
 @import "../variables";
 
+.form-section {
+  width: 100%;
+  padding: 0 20px;
+}
+
 .form-section__title {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   text-align: center;
+  line-height: 1.44;
+}
+
+.form-section__control-list {
+  &_field-opinion {
+    margin: -2px 0 4px;
+  }
+
+  &_field-places {
+    margin-top: -6px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form-section {
     position: relative;
-    width: 100%;
 
     &_half-width {
       width: 50%;
