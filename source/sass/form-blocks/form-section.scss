@@ -1,4 +1,45 @@
+@import "../variables";
+
 .form-section__title {
   margin-bottom: 25px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form-section {
+    position: relative;
+    width: 100%;
+
+    &_half-width {
+      width: 50%;
+    }
+
+    &_decorative_left-line {
+      padding-left: 58px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: $separate-line-bg;
+      }
+    }
+  }
+
+  .form-section__title {
+    &_align_left {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-section__control-list {
+    margin-top: 60px;
+  }
 }

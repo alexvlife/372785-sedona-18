@@ -39,22 +39,36 @@
 
 @media (min-width: $tablet-width) {
   .section-list {
-    &_media {
+    &_media,
+    &_form-section {
       flex-direction: row;
       align-items: unset;
       flex-wrap: wrap;
+    }
+
+    &_media {
       width: 648px;
       padding: 20px 0;
     }
   }
 
   .section-list_media::before,
-  .section-list__item_media::after {
+  .section-list_form-section::before,
+  .section-list__item_media::after,
+  .section-list__item_form-section::after {
     display: none;
   }
 
-  .section-list__item_media {
-    margin: 0;
+  .section-list__item {
+    margin: 0 0 58px;
+
+    &_media {
+      margin: 0;
+    }
+
+    &_order_first {
+      order: -1;
+    }
   }
 }
 

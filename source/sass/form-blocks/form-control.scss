@@ -1,8 +1,13 @@
+@import "../variables";
+
 .form-control {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: baseline;
+
+  &_field_contacts {
+    flex-wrap: wrap;
+  }
 
   &_icon_base {
     position: relative;
@@ -39,6 +44,10 @@
     &:last-child {
       margin-right: 18.5px;
     }
+  }
+
+  &_field_contacts {
+    margin-left: 22px;
   }
 
   &_radio,
@@ -97,4 +106,58 @@
 
 .form-control__field-check:checked + .form-control__label_check::before {
   background-image: url("../img/tick-copy-6.png");
+}
+
+@media (min-width: $tablet-width) {
+  .form-control {
+    &_places {
+      width: 35%;
+
+      &:nth-child(odd) {
+        margin-left: auto;
+      }
+
+      &:nth-child(even) {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-control {
+    &_field_contacts {
+      align-items: baseline;
+      flex-wrap: nowrap;
+      width: 50%;
+    }
+
+    &_places {
+      width: auto;
+
+      &:nth-child(odd),
+      &:nth-child(even) {
+        margin: 0;
+      }
+    }
+
+    &_icon_phone {
+      padding-right: 75px;
+
+      &::after {
+        right: 75px;
+      }
+    }
+  }
+
+  .form-control__label {
+    &_field_contacts {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .form-control__label-visibility-state {
+    display: none;
+  }
 }

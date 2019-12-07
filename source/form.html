@@ -62,9 +62,9 @@
 
       <form action="https://echo.htmlacademy.ru" method="POST" class="page-main__form form">
 
-        <ul class="form__wrapper section-list">
-          <li class="section-list__item form-section">
-            <p class="form-section__title title">Представьтесь:</p>
+        <ul class="form__wrapper section-list section-list_form-section">
+          <li class="section-list__item section-list__item_form-section form-section form-section_half-width form-section_decorative_left-line">
+            <p class="form-section__title form-section__title_align_left title">Представьтесь:</p>
 
             <ul class="form-section__control-list form-controls">
               <li class="form-controls__item form-control">
@@ -88,18 +88,20 @@
             </ul>
           </li>
 
-          <li class="section-list__item form-section">
-            <p class="form-section__title title">Контактная информация:</p>
+          <li class="section-list__item section-list__item_form-section form-section">
+            <p class="form-section__title title title_decorative_lines">Контактная информация:</p>
 
-            <ul class="form-section__control-list form-controls">
-              <li class="form-controls__item form-control form-control_icon_base form-control_icon_phone">
-                <label class="form-control__label form-control__label_field_text" for="phone">Контактный телефон*:</label>
+            <ul class="form-section__control-list form-controls form-controls_contacts">
+              <li class="form-controls__item form-control form-control_field_contacts form-control_icon_base form-control_icon_phone">
+                <label class="form-control__label form-control__label_field_text form-control__label_field_contacts" for="phone">
+                  <span class="form-control__label-visibility-state">Контактный </span>телефон*:
+                </label>
                 <input
                   class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_phone title title_lowercase"
                   type="tel" name="phone" id="phone" placeholder="Введите телефон">
               </li>
-              <li class="form-controls__item form-control form-control_icon_base form-control_icon_email">
-                <label class="form-control__label form-control__label_field_text" for="email">Электронная почта*:</label>
+              <li class="form-controls__item form-control form-control_field_contacts form-control_icon_base form-control_icon_email">
+                <label class="form-control__label form-control__label_field_text form-control__label_field_contacts" for="email">Электронная почта*:</label>
                 <input
                   class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_email title title_lowercase"
                   type="email" name="email" id="email" placeholder="Введите e-mail">
@@ -107,8 +109,8 @@
             </ul>
           </li>
 
-          <li class="section-list__item form-section">
-            <p class="form-section__title title">Ваше общее впечатление:</p>
+          <li class="section-list__item section-list__item_order_first section-list__item_form-section form-section form-section_half-width">
+            <p class="form-section__title form-section__title_align_left title">Ваше общее впечатление:</p>
 
             <ul class="form-section__control-list form-controls">
               <li class="form-controls__item form-control">
@@ -132,29 +134,29 @@
             </ul>
           </li>
 
-          <li class="section-list__item form-section">
-            <p class="form-section__title title">Посещенные достопримечательности:</p>
+          <li class="section-list__item section-list__item_form-section form-section">
+            <p class="form-section__title title title_decorative_lines">Посещенные достопримечательности:</p>
 
-            <ul class="form-section__control-list form-controls">
-              <li class="form-controls__item form-control">
+            <ul class="form-section__control-list form-controls form-controls_places">
+              <li class="form-controls__item form-control form-control_places">
                 <input
                   class="form-control__field-check form-field-check"
                   type="checkbox" name="place" id="place1" value="1" checked>
                 <label class="form-control__label form-control__label_check title title_lowercase" for="place1">Мост Дьявола</label>
               </li>
-              <li class="form-controls__item form-control">
+              <li class="form-controls__item form-control form-control_places">
                 <input
                   class="form-control__field-check form-field-check"
                   type="checkbox" name="place" id="place2" value="2" checked>
                 <label class="form-control__label form-control__label_check title title_lowercase" for="place2">Гора Колокол</label>
               </li>
-              <li class="form-controls__item form-control">
+              <li class="form-controls__item form-control form-control_places">
                 <input
                   class="form-control__field-check form-field-check"
                   type="checkbox" name="place" id="place3" value="3" checked>
                 <label class="form-control__label form-control__label_check title title_lowercase" for="place3">Слайд-парк</label>
               </li>
-              <li class="form-controls__item form-control">
+              <li class="form-controls__item form-control form-control_places">
                 <input
                   class="form-control__field-check form-field-check"
                   type="checkbox" name="place" id="place4" value="4">
@@ -163,8 +165,8 @@
             </ul>
           </li>
 
-          <li class="section-list__item section-list__item_last-border_none form-section">
-              <p class="form-section__title title">Опишите свои эмоции:</p>
+          <li class="section-list__item section-list__item_form-section section-list__item_last-border_none form-section">
+              <p class="form-section__title title title_decorative_lines">Опишите свои эмоции:</p>
 
               <textarea class="form-section__field-textarea form-field-textarea title title_lowercase"
                 id="story" name="story">
@@ -174,7 +176,10 @@
           </li>
         </ul>
 
-        <button type="submit" class="form__submit button button_size_large" title="Отправить отзыв">Отправить отзыв</button>
+        <div class="form__bottom">
+          <button type="submit" class="form__submit button button_size_large button_submit" title="Отправить отзыв">Отправить отзыв</button>
+          <p class="form__caption">* &ndash; Обязательные поля</p>
+        </div>
 
       </form>
 

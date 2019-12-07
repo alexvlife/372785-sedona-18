@@ -1,3 +1,5 @@
+@import "../variables";
+
 .form-controls {
   display: flex;
   flex-direction: column;
@@ -8,5 +10,32 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-controls {
+    &_places {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-controls {
+    &_contacts,
+    &_places {
+      justify-content: space-between;
+    }
+
+    &_contacts {
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    &_places {
+      flex-wrap: nowrap;
+    }
   }
 }

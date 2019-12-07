@@ -5,3 +5,10 @@
   height: 160px;
   background-color: $form-control-bg-base;
 }
+
+@media (min-width: $tablet-width) {
+  .form-field-textarea {
+    width: 100%;
+    margin-top: 35px;
+  }
+}
