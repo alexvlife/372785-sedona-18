@@ -22,6 +22,7 @@
   .title {
     font-size: $title-size-increased;
 
+    &_page_photo,
     &_increased {
       font-size: $title-size-large;
     }
@@ -48,6 +49,10 @@
         margin-left: 30px;
       }
     }
+
+    &_secondary {
+      font-size: $title-size-secondary;
+    }
   }
 }
 
@@ -58,14 +63,18 @@
       &::after {
         width: 30%;
       }
+
+      &::before {
+        margin-right: 50px;
+      }
+
+      &::after {
+        margin-left: 50px;
+      }
     }
 
-    &::before {
-      margin-right: 50px;
-    }
-
-    &::after {
-      margin-left: 50px;
+    &_secondary {
+      font-size: $title-size-secondary;
     }
   }
 }

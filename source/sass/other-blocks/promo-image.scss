@@ -26,9 +26,10 @@
     }
 
     &_secondary {
-      height: 290px;
+      height: 318px;
+      margin-bottom: 18px;
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
-      background-position: bottom, center, 50% 97%;
+      background-position: bottom, 157px 122px, 50% 100%;
       background-size: contain, 460px 80px, cover;
     }
   }
