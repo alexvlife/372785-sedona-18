@@ -19,10 +19,10 @@
 @media (min-width: $tablet-width) {
   .promo-image {
     &_base {
-      height: 518px;
+      height: 546px;
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@1x.jpg");
-      background-position: bottom, 50% 60%, 50% 24px;
-      background-size: contain, 460px 350px, cover;
+      background-position: bottom, 155px 104px, 0 20px;
+      background-size: contain, 460px 350px, 768px 546px;
     }
 
     &_secondary {

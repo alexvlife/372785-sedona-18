@@ -22,3 +22,21 @@
   margin: 36px auto 0;
   letter-spacing: 1.8px;
 }
+
+@media (min-width: $tablet-width) {
+  .search__header {
+    padding: 49px 155px;
+  }
+
+  .search__description {
+    margin-top: 26px;
+  }
+
+  .search__button {
+    margin-top: 43px;
+  }
+
+  .search__preview {
+    margin-top: 10px;
+  }
+}

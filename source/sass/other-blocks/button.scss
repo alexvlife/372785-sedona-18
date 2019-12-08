@@ -15,6 +15,7 @@
   &_nav {
     box-sizing: content-box;
     min-height: 55px;
+    letter-spacing: 0.1px;
   }
 
   &_social {
@@ -48,6 +49,10 @@
 
 @media (min-width: $tablet-width) {
   .button {
+    &_size_large {
+      width: 458px;
+    }
+
     &_submit {
       width: 324px;
     }

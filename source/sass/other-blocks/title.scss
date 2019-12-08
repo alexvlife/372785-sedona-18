@@ -4,6 +4,7 @@
   font-family: $font-family-bold;
   font-size: $title-size-base;
 
+  &_medium,
   &_increased {
     font-size: $title-size-increased;
   }
@@ -19,6 +20,12 @@
 
 @media (min-width: $tablet-width) {
   .title {
+    font-size: $title-size-increased;
+
+    &_increased {
+      font-size: $title-size-large;
+    }
+
     &_decorative_lines {
       display: flex;
       justify-content: space-between;

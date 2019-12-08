@@ -40,10 +40,26 @@
   .section-header_type_feature {
     width: 256px;
     min-height: 256px;
-    padding: 42px 46px;
+    padding: 44px 46px 35px;
+  }
+
+  .section-header__title {
+    line-height: 1.35;
+    letter-spacing: 0.2px;
   }
 
   .section-header__title-line-break {
     display: initial;
+  }
+
+  .section-header__description {
+    margin-top: 27px;
+    letter-spacing: 0.1px;
+
+    &_feature {
+      margin-top: 21px;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+    }
   }
 }
