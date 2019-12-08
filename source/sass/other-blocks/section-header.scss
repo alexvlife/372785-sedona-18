@@ -1,5 +1,10 @@
 .section-header {
   text-align: center;
+
+  &_color_inverse {
+    background-color: $block-bg-color;
+    color: $page-text-color-inverse;
+  }
 }
 
 .section-header__title {
@@ -31,16 +36,13 @@
   display: none;
 }
 
-.section-header_color_inverse {
-  background-color: $block-bg-color;
-  color: $page-text-color-inverse;
-}
-
 @media (min-width: $tablet-width) {
-  .section-header_type_feature {
-    width: 256px;
-    min-height: 256px;
-    padding: 44px 46px 35px;
+  .section-header {
+    &_type_feature {
+      width: 256px;
+      min-height: 256px;
+      padding: 44px 46px 35px;
+    }
   }
 
   .section-header__title {
@@ -60,6 +62,15 @@
       margin-top: 21px;
       line-height: 1.5;
       letter-spacing: 0.3px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-header {
+    &_type_feature {
+      width: 300px;
+      padding: 50px 91px 35px;
     }
   }
 }

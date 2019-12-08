@@ -73,3 +73,9 @@
     margin: 37px 0 43px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feature__content {
+    margin-bottom: 63px;
+  }
+}

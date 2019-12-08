@@ -40,3 +40,17 @@
     margin-top: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .search__header {
+    padding: 49px 358px;
+  }
+
+  .search__button {
+    margin-top: 49px;
+  }
+
+  .search__preview {
+    margin-top: 17px;
+  }
+}
