@@ -24,9 +24,12 @@
 @media (min-width: $tablet-width) {
   .form-section {
     position: relative;
+    padding: 0;
 
     &_half-width {
       width: 50%;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &_decorative_left-line {
@@ -47,9 +50,31 @@
   }
 
   .form-section__title {
+    line-height: 1.25;
+    letter-spacing: 0.1px;
+
     &_align_left {
       text-align: left;
     }
+  }
+
+  .form-section__control-list {
+    &_field-opinion {
+      margin-top: 57px;
+    }
+
+    &_field-present {
+      margin-top: 55px;
+    }
+
+    &_field-places {
+      margin-top: 41px;
+      margin-bottom: -7px;
+    }
+  }
+
+  .form-section__field-textarea {
+    margin-top: 38px;
   }
 }
 

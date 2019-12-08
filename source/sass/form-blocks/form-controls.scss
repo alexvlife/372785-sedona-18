@@ -32,6 +32,27 @@
       flex-wrap: wrap;
     }
   }
+
+  .form-controls__item {
+    &_field-opinion {
+      margin-bottom: 23px;
+    }
+
+    &_field-contacts {
+      margin-bottom: 20px;
+    }
+
+    &_field-place {
+      &:first-child {
+        margin-bottom: 33px;
+      }
+
+      &:nth-child(odd) {
+        margin-left: 97px;
+        margin-right: 32px;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

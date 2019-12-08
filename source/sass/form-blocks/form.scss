@@ -18,13 +18,14 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding: 0 60px 47px;
+    padding: 24px 60px 47px;
   }
 
   .form__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2px;
   }
 
   .form__submit {

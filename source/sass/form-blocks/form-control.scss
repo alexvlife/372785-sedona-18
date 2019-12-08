@@ -123,6 +123,25 @@
       }
     }
   }
+
+  .form-control__label {
+    &_radio {
+      &::before {
+        margin-right: 21px;
+      }
+    }
+
+    &_check {
+      &::before {
+        margin-right: 23px;
+      }
+    }
+
+    &_field_contacts {
+      margin-top: 7px;
+      margin-bottom: 11px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

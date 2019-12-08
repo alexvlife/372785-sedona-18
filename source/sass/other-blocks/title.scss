@@ -16,6 +16,10 @@
   &_secondary {
     font-size: $title-size-secondary;
   }
+
+  &_form-label {
+    font-size: $title-size-base;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -23,6 +27,7 @@
     font-size: $title-size-increased;
 
     &_page_photo,
+    &_page_form,
     &_increased {
       font-size: $title-size-large;
     }
@@ -53,6 +58,10 @@
     &_secondary {
       font-size: $title-size-secondary;
     }
+
+    &_form-label {
+      font-size: $title-size-base;
+    }
   }
 }
 
@@ -75,6 +84,10 @@
 
     &_secondary {
       font-size: $title-size-secondary;
+    }
+
+    &_form-label {
+      font-size: $title-size-base;
     }
   }
 }

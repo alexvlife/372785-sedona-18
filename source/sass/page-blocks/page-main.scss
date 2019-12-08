@@ -19,10 +19,18 @@
 @media (min-width: $tablet-width) {
   .page-main__header {
     margin: 49px 135px 50px;
+
+    &_page_form {
+      margin: 49px 160px 50px;
+    }
   }
 
   .page-main__media-list {
     margin: 0 auto;
+  }
+
+  .page-main__form {
+    margin-bottom: 22px;
   }
 }
 

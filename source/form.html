@@ -55,7 +55,7 @@
     <main class="page-body__main page-main">
       <header class="page-main__header page-main__header_page_form section-header">
         <h1 class="visually-hidden">Отзыв о посещении городка Седона</h1>
-        <p class="section-header__title title">Оставьте свой отзыв</p>
+        <p class="section-header__title title title_page_form">Оставьте свой отзыв</p>
         <p class="section-header__description section-header__description_page_form">Помогите нашим отелям стать лучше!
           Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
       </header>
@@ -63,26 +63,26 @@
       <form action="https://echo.htmlacademy.ru" method="POST" class="page-main__form form">
 
         <ul class="form__wrapper section-list section-list_form-section">
-          <li class="section-list__item section-list__item_form-section form-section form-section_half-width form-section_decorative_left-line">
+          <li class="section-list__item section-list__item_form-section section-list__item_half-width form-section form-section_half-width form-section_decorative_left-line">
             <p class="form-section__title form-section__title_align_left title">Представьтесь:</p>
 
-            <ul class="form-section__control-list form-controls">
+            <ul class="form-section__control-list form-section__control-list_field-present form-controls">
               <li class="form-controls__item form-control">
                 <label class="form-control__label form-control__label_field_text" for="firstName">Имя*:</label>
                 <input
-                  class="form-control__field-text form-field-text title title_lowercase"
+                  class="form-control__field-text form-field-text title title_form-label title_lowercase"
                   type="text" name="firstName" id="firstName" placeholder="Петр">
               </li>
               <li class="form-controls__item form-control">
                 <label class="form-control__label form-control__label_field_text" for="lastName">Фамилия*:</label>
                 <input
-                  class="form-control__field-text form-field-text title title_lowercase"
+                  class="form-control__field-text form-field-text title title_form-label title_lowercase"
                   type="text" name="lastName" id="lastName" placeholder="Иванов">
               </li>
               <li class="form-controls__item form-control">
                 <label class="form-control__label form-control__label_field_text" for="secondName">Отчество:</label>
                 <input
-                  class="form-control__field-text form-field-text title title_lowercase"
+                  class="form-control__field-text form-field-text title title_form-label title_lowercase"
                   type="text" name="secondName" id="secondName" placeholder="Александрович">
               </li>
             </ul>
@@ -97,19 +97,19 @@
                   <span class="form-control__label-visibility-state">Контактный </span>телефон*:
                 </label>
                 <input
-                  class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_phone title title_lowercase"
+                  class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_phone title title_form-label title_lowercase"
                   type="tel" name="phone" id="phone" placeholder="Введите телефон">
               </li>
               <li class="form-controls__item form-control form-control_field_contacts form-control_icon_base form-control_icon_email">
                 <label class="form-control__label form-control__label_field_text form-control__label_field_contacts" for="email">Электронная почта*:</label>
                 <input
-                  class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_email title title_lowercase"
+                  class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_email title title_form-label title_lowercase"
                   type="email" name="email" id="email" placeholder="Введите e-mail">
               </li>
             </ul>
           </li>
 
-          <li class="section-list__item section-list__item_order_first section-list__item_form-section form-section form-section_half-width">
+          <li class="section-list__item section-list__item_order_first section-list__item_form-section section-list__item_half-width form-section form-section_half-width">
             <p class="form-section__title form-section__title_align_left title">Ваше общее впечатление:</p>
 
             <ul class="form-section__control-list form-section__control-list_field-opinion form-controls">
@@ -117,19 +117,19 @@
                 <input
                   class="form-control__field-radio form-field-radio"
                   type="radio" name="opinion" id="opinion1" value="1" checked>
-                <label class="form-control__label form-control__label_radio title title_lowercase" for="opinion1">Скорее положительное</label>
+                <label class="form-control__label form-control__label_radio title title_form-label title_lowercase" for="opinion1">Скорее положительное</label>
               </li>
               <li class="form-controls__item form-controls__item_field-opinion form-control">
                 <input
                   class="form-control__field-radio form-field-radio"
                   type="radio" name="opinion" id="opinion2" value="2">
-                <label class="form-control__label form-control__label_radio title title_lowercase" for="opinion2">Скорее отрицательное</label>
+                <label class="form-control__label form-control__label_radio title title_form-label title_lowercase" for="opinion2">Скорее отрицательное</label>
               </li>
               <li class="form-controls__item form-controls__item_field-opinion form-control">
                 <input
                   class="form-control__field-radio form-field-radio"
                   type="radio" name="opinion" id="opinion3" value="3">
-                <label class="form-control__label form-control__label_radio title title_lowercase" for="opinion3">Затрудняюсь ответить</label>
+                <label class="form-control__label form-control__label_radio title title_form-label title_lowercase" for="opinion3">Затрудняюсь ответить</label>
               </li>
             </ul>
           </li>
@@ -142,25 +142,25 @@
                 <input
                   class="form-control__field-check form-field-check"
                   type="checkbox" name="place" id="place1" value="1" checked>
-                <label class="form-control__label form-control__label_check title title_lowercase" for="place1">Мост Дьявола</label>
+                <label class="form-control__label form-control__label_check title title_form-label title_lowercase" for="place1">Мост Дьявола</label>
               </li>
               <li class="form-controls__item form-controls__item_field-place form-control form-control_places">
                 <input
                   class="form-control__field-check form-field-check"
                   type="checkbox" name="place" id="place2" value="2" checked>
-                <label class="form-control__label form-control__label_check title title_lowercase" for="place2">Гора Колокол</label>
+                <label class="form-control__label form-control__label_check title title_form-label title_lowercase" for="place2">Гора Колокол</label>
               </li>
               <li class="form-controls__item form-controls__item_field-place form-control form-control_places">
                 <input
                   class="form-control__field-check form-field-check"
                   type="checkbox" name="place" id="place3" value="3" checked>
-                <label class="form-control__label form-control__label_check title title_lowercase" for="place3">Слайд-парк</label>
+                <label class="form-control__label form-control__label_check title title_form-label title_lowercase" for="place3">Слайд-парк</label>
               </li>
               <li class="form-controls__item form-controls__item_field-place form-control form-control_places">
                 <input
                   class="form-control__field-check form-field-check"
                   type="checkbox" name="place" id="place4" value="4">
-                <label class="form-control__label form-control__label_check title title_lowercase" for="place4">Красные скалы</label>
+                <label class="form-control__label form-control__label_check title title_form-label title_lowercase" for="place4">Красные скалы</label>
               </li>
             </ul>
           </li>
@@ -168,7 +168,7 @@
           <li class="section-list__item section-list__item_form-section section-list__item_last-border_none form-section">
               <p class="form-section__title title title_decorative_lines">Опишите свои эмоции:</p>
 
-              <textarea class="form-section__field-textarea form-field-textarea title title_lowercase"
+              <textarea class="form-section__field-textarea form-field-textarea title title_form-label title_lowercase"
                 id="story" name="story">Опишите подробно все свои восторги</textarea>
             </section>
           </li>
