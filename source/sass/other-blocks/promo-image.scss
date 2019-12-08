@@ -44,9 +44,10 @@
     }
 
     &_secondary {
-      height: 301px;
+      height: 329px;
+      margin-bottom: 54px;
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@1x.jpg");
-      background-position: bottom, center, 50% 97%;
+      background-position: bottom, 370px 129px, 50% 100%;
       background-size: contain, 460px 80px, cover;
     }
   }
