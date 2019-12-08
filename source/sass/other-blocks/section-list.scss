@@ -19,7 +19,7 @@
 }
 
 .section-list__item {
-  margin: 22px 20px 21px 20px;
+  margin: 22px 20px 21px;
 
   &::after {
     content: "";
@@ -28,33 +28,59 @@
     right: 0;
     display: block;
     height: 1px;
-    margin-top: 21px;
+    margin-top: 25px;
     background-color: $separate-line-bg;
   }
 
   &_last-border_none::after {
     display: none;
   }
+
+  &_form-section {
+    margin: 19px 20px 26px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .section-list {
-    &_media {
+    &_media,
+    &_form-section {
       flex-direction: row;
       align-items: unset;
       flex-wrap: wrap;
+    }
+
+    &_media {
       width: 648px;
       padding: 20px 0;
     }
   }
 
   .section-list_media::before,
-  .section-list__item_media::after {
+  .section-list_form-section::before,
+  .section-list__item_media::after,
+  .section-list__item_form-section::after {
     display: none;
   }
 
-  .section-list__item_media {
-    margin: 0;
+  .section-list__item {
+    margin: 0 0 58px;
+
+    &_media {
+      margin: 0;
+    }
+
+    &_order_first {
+      order: -1;
+    }
+
+    &_form-section {
+      margin-bottom: 52px;
+    }
+
+    &_half-width {
+      margin-bottom: 67px;
+    }
   }
 }
 
@@ -62,6 +88,16 @@
   .section-list {
     &_media {
       width: $desktop-width;
+    }
+  }
+
+  .section-list__item {
+    &_form-section {
+      margin-bottom: 33px;
+    }
+
+    &_half-width {
+      margin-bottom: 67px;
     }
   }
 }

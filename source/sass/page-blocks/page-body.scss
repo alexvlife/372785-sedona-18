@@ -1,7 +1,7 @@
 @import "../variables";
 
 .page-body {
-  min-width: $page-min-width;
+  width: $page-min-width;
   margin: 0 auto;
   font-family: $font-family-regular;
   font-size: $text-size-base;
@@ -12,12 +12,12 @@
 
 @media (min-width: $tablet-width) {
   .page-body {
-    max-width: $tablet-width;
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-body {
-    max-width: $desktop-width;
+    width: $desktop-width;
   }
 }

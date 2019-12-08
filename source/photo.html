@@ -15,7 +15,7 @@
             <a class="main-navigation__link main-navigation__link_top button button_nav button_nav-base" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item main-navigation__item_active">
-            <a class="main-navigation__link button button_nav button_nav-visited" href="#">Фото и видео</a>
+            <a class="main-navigation__link button button_nav button_nav-visited">Фото и видео</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link button button_nav button_nav-base" href="form.html">Форма отзыва</a>
@@ -55,8 +55,8 @@
     <main class="page-body__main page-main">
       <header class="page-main__header section-header">
         <h1 class="visually-hidden">Фото и видео городка Седона</h1>
-        <p class="section-header__title title">Фото и видео</p>
-        <p class="section-header__description">Не можете решиться на путешествие из-за курса?
+        <p class="section-header__title title title_page_photo">Фото и видео</p>
+        <p class="section-header__description section-header__description_page_photo">Не можете решиться на путешествие из-за курса?
           Фотографии помогут вам забыть о политике и экономике.</p>
       </header>
 
@@ -182,51 +182,51 @@
 
       <article class="page-main__demo demo">
         <header class="demo__header section-header">
-          <h2 class="section-header__title title">Все еще сомневаетесь?</h1>
-          <p class="section-header__description">Смотрите видеопрезентацию и скорее за билетами,
+          <h2 class="section-header__title title title_increased">Все еще сомневаетесь?</h2>
+          <p class="section-header__description section-header__description_page_photo">
+            Смотрите видеопрезентацию и скорее за билетами,
             пока они не подорожали в очередной раз!
           </p>
         </header>
 
         <section class="demo__preview video-player">
-
-          <img
-            class="video-player__preview"
-            src="img/video-mobile@1x.jpg"
-            width="321"
-            height="201"
-            alt="Предпросмотр видео">
-
-          <div class="video-player__control-panel player-control-panel">
-            <label class="player-control-panel__progress-bar player-progress-bar">
-              <input class="player-progress-bar__item" type="range" name="progress-bar">
-            </label>
-
-            <ul class="player-control-panel__action-list player-actions">
-              <li class="player-actions__wrapper">
-                <button
-                  class="player-actions__button player-action player-action_replay"
-                  type="button" title="Воспроизвести снова"></button>
-              </li>
-              <li class="player-actions__wrapper player-actions__wrapper_central-item">
-                <button
-                  class="player-actions__button player-action player-action_subtitles"
-                  type="button" title="Включить субтитры"></button>
-              </li>
-              <li class="player-actions__wrapper">
-                <button
-                  class="player-actions__button player-action player-action_fullscreen"
-                  type="button" title="Развернуть на весь экран"></button>
-              </li>
-            </ul>
+          <div class="video-player__preview video-preview">
+            <img
+              src="img/video-mobile@1x.jpg"
+              width="320"
+              height="200"
+              alt="Предпросмотр видео">
           </div>
+
+          <ul class="video-player__control-panel player-control-panel">
+            <li class="player-control-panel__wrapper">
+              <button
+                class="player-control-panel__button player-action player-action_replay"
+                type="button" title="Воспроизвести снова"></button>
+            </li>
+            <li class="player-control-panel__wrapper player-control-panel__wrapper_item_progress-bar">
+              <label class="player-control-panel__progress-bar player-progress-bar">
+                <input class="player-progress-bar__item" type="range" name="progress-bar">
+              </label>
+            </li>
+            <li class="player-control-panel__wrapper player-control-panel__wrapper_item_subtitles">
+              <button
+                class="player-control-panel__button player-action player-action_subtitles"
+                type="button" title="Включить субтитры"></button>
+            </li>
+            <li class="player-control-panel__wrapper">
+              <button
+                class="player-control-panel__button player-action player-action_fullscreen"
+                type="button" title="Развернуть на весь экран"></button>
+            </li>
+          </ul>
 
         </section>
       </article>
     </main>
 
     <footer class="page-body__footer page-footer">
-      <a href="#" class="page-footer__title title title_increased" title="Посетите Седону">#visitsedona</a>
+      <a href="#" class="page-footer__title title  title_medium" title="Посетите Седону">#visitsedona</a>
 
       <ul class="page-footer__socials socials">
         <li class="socials__item">
@@ -261,7 +261,8 @@
         </li>
       </ul>
 
-      <p class="page-footer__copyright copyright">Разработано
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__caption">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Academy">
           <img
             class="copyright__image"

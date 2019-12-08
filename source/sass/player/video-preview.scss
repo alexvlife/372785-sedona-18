@@ -1,0 +1,20 @@
+@import "../variables";
+
+.video-preview {
+  width: 320px;
+  height: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-preview {
+    width: 648px;
+    height: 500px;
+    background-color: $light-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-preview {
+    width: 800px;
+  }
+}

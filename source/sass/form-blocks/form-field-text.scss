@@ -1,6 +1,7 @@
 @import "../variables";
 
 .form-field-text {
+  width: 100%;
   height: 58px;
   padding: 0 22px;
   border-width: 4px;
@@ -16,5 +17,11 @@
   &:focus {
     background-color: $form-control-bg-active;
     border-color: $form-control-bg-hover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-field-text {
+    width: auto;
   }
 }

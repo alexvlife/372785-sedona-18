@@ -4,31 +4,32 @@
   &_base {
     height: 389px;
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: bottom, center, center;
-    background-size: cover, 281px 214px, cover;
+    background-position: bottom, 20px 89px, -224px -1px;
+    background-size: cover, 280px 214px, cover;
   }
 
   &_secondary {
-    height: 158px;
+    height: 157px;
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: bottom, center, 50% 97%;
-    background-size: cover, 230px 40px, auto;
+    background-position: -799px 0, 46px 50px, -225px -232px;
+    background-size: cover, 229px 40px, auto;
   }
 }
 
 @media (min-width: $tablet-width) {
   .promo-image {
     &_base {
-      height: 518px;
+      height: 546px;
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@1x.jpg");
-      background-position: bottom, 50% 60%, 50% 24px;
-      background-size: contain, 460px 350px, cover;
+      background-position: bottom, 155px 104px, 0 20px;
+      background-size: contain, 460px 350px, 768px 546px;
     }
 
     &_secondary {
-      height: 290px;
+      height: 318px;
+      margin-bottom: 18px;
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
-      background-position: bottom, center, 50% 97%;
+      background-position: bottom, 157px 122px, 50% 100%;
       background-size: contain, 460px 80px, cover;
     }
   }
@@ -38,14 +39,15 @@
   .promo-image {
     &_base {
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@1x.jpg");
-      background-position: bottom, 50% 60%, 50% 24px;
+      background-position: bottom, 370px 106px, 50% 24px;
       background-size: contain, 460px 350px, cover;
     }
 
     &_secondary {
-      height: 301px;
+      height: 329px;
+      margin-bottom: 54px;
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@1x.jpg");
-      background-position: bottom, center, 50% 97%;
+      background-position: bottom, 370px 129px, 50% 100%;
       background-size: contain, 460px 80px, cover;
     }
   }

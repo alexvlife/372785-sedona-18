@@ -1,38 +1,90 @@
 .section-header {
   text-align: center;
+
+  &_color_inverse {
+    background-color: $block-bg-color;
+    color: $page-text-color-inverse;
+  }
 }
 
 .section-header__title {
   line-height: 1.44;
+  letter-spacing: 0.15px;
 }
 
 .section-header__caption {
-  margin-top: 18px;
+  margin-top: 6px;
   line-height: 1.71;
 }
 
 .section-header__description {
-  margin-top: 23px;
-  line-height: 1.71;
+  margin-top: 30px;
+  line-height: 1.77;
+
+  &_feature {
+    margin-top: 14px;
+    line-height: 1.61;
+  }
+
+  &_page_photo,
+  &_page_form {
+    margin-top: 25px;
+  }
 }
 
 .section-header__title-line-break {
   display: none;
 }
 
-.section-header_color_inverse {
-  background-color: $block-bg-color;
-  color: $page-text-color-inverse;
-}
-
 @media (min-width: $tablet-width) {
-  .section-header_type_feature {
-    width: 256px;
-    min-height: 256px;
-    padding: 42px 46px;
+  .section-header {
+    &_type_feature {
+      width: 256px;
+      min-height: 256px;
+      padding: 44px 46px 35px;
+    }
+  }
+
+  .section-header__title {
+    line-height: 1.35;
+    letter-spacing: 0.2px;
   }
 
   .section-header__title-line-break {
     display: initial;
+  }
+
+  .section-header__description {
+    margin-top: 27px;
+    letter-spacing: 0.1px;
+
+    &_feature {
+      margin-top: 21px;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+    }
+
+    &_page_photo {
+      margin-top: 24px;
+    }
+
+    &_page_form {
+      margin-top: 23px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-header {
+    &_type_feature {
+      width: 300px;
+      padding: 50px 91px 35px;
+    }
+  }
+
+  .section-header__description {
+    &_page_form {
+      margin-top: 24px;
+    }
   }
 }

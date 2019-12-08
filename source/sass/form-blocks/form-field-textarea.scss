@@ -3,5 +3,19 @@
 .form-field-textarea {
   width: 280px;
   height: 160px;
+  padding: 13px 20px;
+  line-height: 1.44;
   background-color: $form-control-bg-base;
+}
+
+@media (min-width: $tablet-width) {
+  .form-field-textarea {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-field-textarea {
+    padding: 14px 21px;
+  }
 }

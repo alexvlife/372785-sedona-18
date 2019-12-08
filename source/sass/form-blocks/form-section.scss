@@ -1,4 +1,96 @@
+@import "../variables";
+
+.form-section {
+  width: 100%;
+  padding: 0 20px;
+}
+
 .form-section__title {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   text-align: center;
+  line-height: 1.44;
+}
+
+.form-section__control-list {
+  &_field-opinion {
+    margin: -2px 0 4px;
+  }
+
+  &_field-places {
+    margin-top: -6px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-section {
+    position: relative;
+    padding: 0;
+
+    &_half-width {
+      width: 50%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &_decorative_left-line {
+      padding-left: 58px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: $separate-line-bg;
+      }
+    }
+  }
+
+  .form-section__title {
+    line-height: 1.25;
+    letter-spacing: 0.1px;
+
+    &_align_left {
+      text-align: left;
+    }
+  }
+
+  .form-section__control-list {
+    &_field-opinion {
+      margin-top: 57px;
+    }
+
+    &_field-present {
+      margin-top: 55px;
+    }
+
+    &_field-places {
+      margin-top: 41px;
+      margin-bottom: -7px;
+    }
+  }
+
+  .form-section__field-textarea {
+    margin-top: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-section {
+    &_half-width {
+      padding-left: 80px;
+    }
+  }
+
+  .form-section__control-list {
+    margin-top: 58px;
+
+    &_field-places {
+      margin-top: 41px;
+      margin-bottom: 34px;
+    }
+  }
 }

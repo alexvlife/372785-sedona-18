@@ -9,10 +9,13 @@
   font-family: $font-family-bold;
   font-size: $title-size-base;
   color: $button-text-color-base;
+  text-transform: uppercase;
   background-color: $button-bg-color-base;
 
   &_nav {
+    box-sizing: content-box;
     min-height: 55px;
+    letter-spacing: 0.1px;
   }
 
   &_social {
@@ -20,13 +23,12 @@
     min-height: 48px;
   }
 
-  &_size_large {
-    width: 280px;
-    min-height: 58px;
-  }
-
   &_size_medium {
     width: 180px;
+  }
+
+  &_size_large {
+    width: 280px;
   }
 
   &:hover {
@@ -47,6 +49,14 @@
 
 @media (min-width: $tablet-width) {
   .button {
+    &_size_large {
+      width: 458px;
+    }
+
+    &_submit {
+      width: 324px;
+    }
+
     &_nav {
       width: 153px;
       font-size: $text-size-base;
@@ -85,6 +95,10 @@
 
 @media (min-width: $desktop-width) {
   .button {
+    &_submit {
+      width: 480px;
+    }
+
     &_nav {
       width: 239px;
     }

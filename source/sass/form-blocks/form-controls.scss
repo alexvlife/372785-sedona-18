@@ -1,3 +1,5 @@
+@import "../variables";
+
 .form-controls {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,78 @@
 .form-controls__item {
   margin-bottom: 20px;
 
+  &_field-contacts {
+    margin-bottom: 11px;
+  }
+
+  &_field-opinion {
+    margin-bottom: 14px;
+  }
+
+  &_field-place {
+    margin-bottom: 25px;
+  }
+
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-controls {
+    &_places {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .form-controls__item {
+    &_field-opinion {
+      margin-bottom: 23px;
+    }
+
+    &_field-contacts {
+      margin-bottom: 20px;
+    }
+
+    &_field-place {
+      &:first-child {
+        margin-bottom: 33px;
+      }
+
+      &:nth-child(odd) {
+        margin-left: 97px;
+        margin-right: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-controls {
+    &_contacts,
+    &_places {
+      justify-content: space-between;
+    }
+
+    &_contacts {
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    &_places {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .form-controls__item {
+    &_field-contacts {
+      margin-top: 15px;
+    }
+
+    &_field-place:nth-child(odd),
+    &_field-place:nth-child(even) {
+      margin: 0;
+    }
   }
 }

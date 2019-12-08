@@ -1,21 +1,49 @@
 @import "../variables";
 
 .page-main__header {
-  margin: 43px 32px 10px;
+  margin: 39px 25px 5px;
+
+  &_page_form {
+    margin: 39px 20px 15px;
+  }
+}
+
+.page-main__media-list {
+  margin-top: 26px;
+}
+
+.page-main__demo {
+  margin-bottom: 49px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__header {
-    margin: 51px 139px 55px;
+    margin: 49px 135px 50px;
+
+    &_page_form {
+      margin: 49px 160px 50px;
+    }
   }
 
   .page-main__media-list {
     margin: 0 auto;
   }
+
+  .page-main__form {
+    margin-bottom: 22px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__header {
-    margin: 51px 353px 55px;
+    margin: 49px 376px 50px;
+  }
+
+  .page-main__demo {
+    margin-bottom: 96px;
+  }
+
+  .page-main__form {
+    margin-bottom: 30px;
   }
 }

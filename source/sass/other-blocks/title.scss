@@ -4,6 +4,7 @@
   font-family: $font-family-bold;
   font-size: $title-size-base;
 
+  &_medium,
   &_increased {
     font-size: $title-size-increased;
   }
@@ -14,5 +15,79 @@
 
   &_secondary {
     font-size: $title-size-secondary;
+  }
+
+  &_form-label {
+    font-size: $title-size-base;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: $title-size-increased;
+
+    &_page_photo,
+    &_page_form,
+    &_increased {
+      font-size: $title-size-large;
+    }
+
+    &_decorative_lines {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 19%;
+        height: 1px;
+        background-color: $separate-line-bg;
+      }
+
+      &::before {
+        margin-right: 30px;
+      }
+
+      &::after {
+        margin-left: 30px;
+      }
+    }
+
+    &_secondary {
+      font-size: $title-size-secondary;
+    }
+
+    &_form-label {
+      font-size: $title-size-base;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    &_decorative_lines {
+      &::before,
+      &::after {
+        width: 29%;
+      }
+
+      &::before {
+        margin-right: 50px;
+      }
+
+      &::after {
+        margin-left: 50px;
+      }
+    }
+
+    &_secondary {
+      font-size: $title-size-secondary;
+    }
+
+    &_form-label {
+      font-size: $title-size-base;
+    }
   }
 }

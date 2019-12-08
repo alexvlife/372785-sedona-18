@@ -12,3 +12,21 @@
   flex-grow: 1;
   margin: 0 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .player-progress-bar {
+    width: 390px;
+    background-color: unset;
+  }
+
+  .player-progress-bar__item {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .player-progress-bar {
+    width: 540px;
+    background-color: unset;
+  }
+}

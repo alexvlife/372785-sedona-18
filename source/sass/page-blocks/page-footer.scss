@@ -6,13 +6,20 @@
   justify-content: space-around;
   align-items: center;
   min-height: 233px;
-  padding: $base-padding;
+  padding: 5px 20px 0;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
+    justify-content: space-between;
     min-height: 120px;
-    padding: 36px 20px;
+    padding: 17px 60px 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 20px 120px 41px;
   }
 }
