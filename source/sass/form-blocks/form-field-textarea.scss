@@ -13,3 +13,9 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-field-textarea {
+    padding: 14px 21px;
+  }
+}

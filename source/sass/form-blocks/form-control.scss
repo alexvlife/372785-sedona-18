@@ -55,6 +55,7 @@
   &_check {
     display: flex;
     align-items: center;
+    position: relative;
 
     &::before {
       content: "";
@@ -174,6 +175,15 @@
     &_field_contacts {
       margin-left: 0;
       margin-bottom: 0;
+    }
+
+    &_radio {
+      height: 55px;
+
+      &::before {
+        position: absolute;
+        right: 100%;
+      }
     }
   }
 

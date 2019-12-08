@@ -90,4 +90,14 @@
       width: $desktop-width;
     }
   }
+
+  .section-list__item {
+    &_form-section {
+      margin-bottom: 33px;
+    }
+
+    &_half-width {
+      margin-bottom: 67px;
+    }
+  }
 }

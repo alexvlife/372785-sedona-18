@@ -36,10 +36,14 @@
 
 @media (min-width: $desktop-width) {
   .page-main__header {
-    margin: 49px 353px 50px;
+    margin: 49px 376px 50px;
   }
 
   .page-main__demo {
     margin-bottom: 96px;
+  }
+
+  .page-main__form {
+    margin-bottom: 30px;
   }
 }

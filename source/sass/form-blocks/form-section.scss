@@ -79,7 +79,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-section {
+    &_half-width {
+      padding-left: 80px;
+    }
+  }
+
   .form-section__control-list {
-    margin-top: 60px;
+    margin-top: 58px;
+
+    &_field-places {
+      margin-top: 41px;
+      margin-bottom: 34px;
+    }
   }
 }

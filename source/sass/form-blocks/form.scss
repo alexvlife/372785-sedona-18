@@ -39,6 +39,14 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 0 120px 47px;
+    padding: 8px 120px 47px;
+  }
+
+  .form__bottom {
+    margin-top: 19px;
+  }
+
+  .form__submit {
+    font-size: $title-size-increased;
   }
 }
