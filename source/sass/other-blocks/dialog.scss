@@ -1,0 +1,67 @@
+@import "../variables";
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+  text-align: center;
+  background-color: $page-bg-color;
+
+  &_type_error {
+    padding: 17px 20px;
+  }
+}
+
+.dialog__header {
+  margin: 25px 25px 0;
+
+  &_type_success {
+    margin: 49px 52px 38px;
+  }
+}
+
+.dialog__button-wrapper {
+  align-self: stretch;
+  background-color: $light-grey;
+
+  &_without-bg {
+    padding: 0 50px;
+    background-color: transparent;
+  }
+}
+
+.dialog__button {
+  margin: 20px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .dialog {
+    &_type_error {
+      width: 400px;
+      padding: 30px 20px;
+    }
+
+    &_type_success {
+      width: 640px;
+    }
+  }
+
+  .dialog__header {
+    &_type_success {
+      margin-left: 108px;
+      margin-right: 108px;
+    }
+  }
+
+  .dialog__button-wrapper {
+    &_without-bg {
+      padding: 0 44px;
+    }
+  }
+
+  .dialog__button {
+    margin: 44px 91px;
+  }
+}
