@@ -2,9 +2,12 @@
 
 .page-body {
   width: auto;
+  max-width: $desktop-width;
+  margin: 0 auto;
   font-family: $font-family-regular;
   font-size: $text-size-base;
   color: $page-text-color-secondary;
   text-transform: uppercase;
-  background-color: $page-bg-color;
+  background-color: $page-outer-bg-color;
+  box-shadow: 0 5px 15px 0 $page-shadow-color;
 }

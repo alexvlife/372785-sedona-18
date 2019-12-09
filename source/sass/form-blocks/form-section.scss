@@ -16,13 +16,22 @@
 }
 
 .form-section__control-list {
+  margin-left: auto;
+  margin-right: auto;
+
   &_field-opinion {
-    margin: -2px 0 4px;
+    margin-top: -2px;
+    margin-bottom: 4px;
   }
 
   &_field-places {
     margin-top: -6px;
   }
+}
+
+.form-section__field-textarea {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {

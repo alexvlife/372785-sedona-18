@@ -1,5 +1,9 @@
 @import "../variables";
 
+.demo {
+  padding-bottom: 49px;
+}
+
 .demo__preview {
   margin: 0 auto;
 }
@@ -19,6 +23,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .demo {
+    padding-bottom: 96px;
+  }
+
   .demo__preview {
     margin-top: 71px;
   }

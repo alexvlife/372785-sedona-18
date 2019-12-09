@@ -1,6 +1,18 @@
 .section-header {
   text-align: center;
 
+  &_page_index {
+    padding: 39px 25px 5px;
+  }
+
+  &_page_photo {
+    padding: 38px 25px 5px;
+  }
+
+  &_page_form {
+    padding: 38px 20px 17px;
+  }
+
   &_color_inverse {
     background-color: $block-bg-color;
     color: $page-text-color-inverse;
@@ -46,6 +58,18 @@
 
 @media (min-width: $tablet-width) {
   .section-header {
+    &_page_index {
+      padding: 48px 135px 51px;
+    }
+
+    &_page_photo {
+      padding: 51px 160px 50px;
+    }
+
+    &_page_form {
+      padding: 51px 160px 50px;
+    }
+
     &_type_feature {
       width: 251px;
       min-height: 256px;
@@ -84,6 +108,18 @@
 
 @media (min-width: $desktop-width) {
   .section-header {
+    &_page_index {
+      padding: 49px 330px 50px;
+    }
+
+    &_page_photo {
+      padding: 52px 376px 51px;
+    }
+
+    &_page_form {
+      padding: 52px 378px 50px;
+    }
+
     &_type_feature {
       width: 299px;
       padding: 51px 92px 35px;

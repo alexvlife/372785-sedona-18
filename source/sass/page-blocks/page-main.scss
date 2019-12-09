@@ -1,65 +1,15 @@
 @import "../variables";
 
-.page-main__header {
-  margin: 39px 25px 5px;
-
-  &_page_photo {
-    margin-top: 38px;
-  }
-
-  &_page_form {
-    margin: 38px 20px 17px;
-  }
+.page-main {
+  background-color: $page-bg-color;
 }
 
 .page-main__media-list {
   margin-top: 27px;
 }
 
-.page-main__demo {
-  margin-bottom: 49px;
-}
-
 @media (min-width: $tablet-width) {
-  .page-main__header {
-    margin: 48px 135px 51px;
-
-    &_page_photo {
-      margin: 51px 160px 50px;
-    }
-
-    &_page_form {
-      margin: 51px 160px 50px;
-    }
-  }
-
   .page-main__media-list {
     margin: 0 auto;
-  }
-
-  .page-main__form {
-    margin-bottom: 22px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-main__header {
-    margin: 49px 330px 50px;
-
-    &_page_photo {
-      margin: 52px 376px 51px;
-    }
-
-    &_page_form {
-      margin: 52px 378px 50px;
-    }
-  }
-
-  .page-main__demo {
-    margin-bottom: 96px;
-  }
-
-  .page-main__form {
-    margin-bottom: 30px;
   }
 }

@@ -3,6 +3,7 @@
 .form-controls {
   display: flex;
   flex-direction: column;
+  width: $page-min-width;
 }
 
 .form-controls__item {
@@ -31,6 +32,8 @@
 
 @media (min-width: $tablet-width) {
   .form-controls {
+    width: auto;
+
     &_places {
       flex-direction: row;
       flex-wrap: wrap;
