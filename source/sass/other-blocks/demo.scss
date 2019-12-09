@@ -1,29 +1,37 @@
 @import "../variables";
 
+.demo {
+  padding-bottom: 49px;
+}
+
 .demo__preview {
   margin: 0 auto;
 }
 
 .demo__header {
-  margin: 32px 42px 35px;
+  margin: 31px 42px 36px;
 }
 
 @media (min-width: $tablet-width) {
+  .demo__preview {
+    margin-top: 74px;
+  }
+
+  .demo__header {
+    margin: 40px 168px 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .demo {
+    padding-bottom: 96px;
+  }
+
   .demo__preview {
     margin-top: 71px;
   }
 
   .demo__header {
-    margin: 37px 168px 35px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .demo__preview {
-    margin-top: 70px;
-  }
-
-  .demo__header {
-    margin: 43px 380px 35px;
+    margin: 46px 380px 35px;
   }
 }

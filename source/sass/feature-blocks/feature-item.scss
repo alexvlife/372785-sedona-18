@@ -1,12 +1,18 @@
 @import "../variables";
 
 .feature-item {
-  padding: 6px 0 12px;
+  padding: 7px 0 11px;
 }
 
 .feature-item__title,
 .feature-item__description {
   padding-left: 50px;
+}
+
+.feature-item__description {
+  margin-top: 5px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
 }
 
 .feature-item__title {
@@ -36,15 +42,10 @@
   }
 }
 
-.feature-item__description {
-  margin-top: 6px;
-  line-height: 1.48;
-}
-
 @media (min-width: $tablet-width) {
   .feature-item {
     width: 33.3%;
-    padding: 20px 45px;
+    padding: 20px 46px;
     text-align: center;
   }
 
@@ -59,7 +60,6 @@
 
   .feature-item__title {
     justify-content: center;
-    padding-top: 101px;
 
     &_house {
       min-height: 72px;
@@ -78,5 +78,11 @@
       background-size: 77px 68px;
       background-position: 50% 6px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature-item {
+    padding: 20px 50px;
   }
 }

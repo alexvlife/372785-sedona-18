@@ -24,14 +24,25 @@
     }
   }
 
+  .media-info__title {
+    margin-top: -4px;
+    letter-spacing: 0.1px;
+  }
+
   .media-info__rating {
-    margin-top: 0;
+    margin-top: -5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .media-info {
+    padding-left: 21px;
     color: $page-text-color-inverse;
     background-color: $black-30;
+  }
+
+  .media-info__title,
+  .media-info__rating {
+    margin-top: -2px;
   }
 }

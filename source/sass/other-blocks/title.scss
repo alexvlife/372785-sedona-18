@@ -26,6 +26,10 @@
   .title {
     font-size: $title-size-increased;
 
+    &_feature-icon {
+      padding-top: 101px;
+    }
+
     &_page_photo,
     &_page_form,
     &_increased {

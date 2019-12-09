@@ -28,7 +28,7 @@
     right: 0;
     display: block;
     height: 1px;
-    margin-top: 25px;
+    margin-top: 20px;
     background-color: $separate-line-bg;
   }
 
@@ -38,6 +38,10 @@
 
   &_form-section {
     margin: 19px 20px 26px;
+
+    &::after {
+      margin-top: 25px;
+    }
   }
 }
 
@@ -75,7 +79,7 @@
     }
 
     &_form-section {
-      margin-bottom: 52px;
+      margin-bottom: 50px;
     }
 
     &_half-width {

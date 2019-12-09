@@ -18,6 +18,8 @@ $dark-grey-blue: #5496bd;
 $white: #ffffff;
 $white-30: rgba(255, 255, 255, 0.3);
 
+$page-shadow-color: rgba(0, 1, 1, 0.2);
+
 /* text colors */
 $page-text-color-base: $black;
 $page-text-color-inverse: $white;
@@ -38,6 +40,7 @@ $button-text-color-disabled: $white;
 
 /* background colors */
 $page-bg-color: $white;
+$page-outer-bg-color: $light-grey;
 $block-bg-color: $light-grey-blue;
 
 $separate-line-bg: $grey;

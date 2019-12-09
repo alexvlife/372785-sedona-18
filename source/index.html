@@ -53,7 +53,7 @@
     </header>
 
     <main class="page-body__main page-main">
-      <header class="page-main__header section-header">
+      <header class="page-main__header section-header section-header_page_index">
         <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
         <p class="section-header__title title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="section-header__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -62,9 +62,9 @@
       <ol class="page-main__feature-list features">
 
         <li class="features__item features__item_first-child feature">
-          <header class="feature__header section-header section-header_type_feature section-header_color_inverse">
+          <header class="feature__header feature__header_top section-header section-header_type_feature section-header_color_inverse">
             <h2 class="section-header__title title">Настоящий городок</h2>
-            <p class="section-header__caption">&ndash; №1 &ndash;</p>
+            <p class="section-header__caption section-header__caption_feature-top">&ndash; №1 &ndash;</p>
             <p class="section-header__description section-header__description_feature">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </header>
 
@@ -73,15 +73,15 @@
           <div class="feature__content-container">
             <ul class="feature__content feature-content">
               <li class="feature-content__item feature-content__item_first-child feature-item">
-                <h3 class="feature-item__title feature-item__title_house title">Жилье</h3>
+                <h3 class="feature-item__title feature-item__title_house title title_feature-icon">Жилье</h3>
                 <p class="feature-item__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="feature-content__item feature-item">
-                <h3 class="feature-item__title feature-item__title_gift title">Сувениры</h3>
+                <h3 class="feature-item__title feature-item__title_gift title title_feature-icon">Сувениры</h3>
                 <p class="feature-item__description">Не только китайского, но и местного производства!</p>
               </li>
               <li class="feature-content__item feature-content__item_last-child feature-item">
-                <h3 class="feature-item__title feature-item__title_food title">Еда</h3>
+                <h3 class="feature-item__title feature-item__title_food title title_feature-icon">Еда</h3>
                 <p class="feature-item__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
@@ -99,7 +99,7 @@
         </li>
 
         <li class="features__item feature feature_inactive">
-          <header class="feature__header feature__header_inactive section-header section-header_type_feature">
+          <header class="feature__header feature__header_inactive section-header">
             <h2 class="section-header__title title">Небольшая <br class="section-header__title-line-break">площадь</h2>
             <p class="section-header__caption">&ndash; №3 &ndash;</p>
             <p class="section-header__description section-header__description_feature">Все интересные места находятся очень близко</p>
@@ -107,7 +107,7 @@
         </li>
 
         <li class="features__item feature feature_inactive">
-          <header class="feature__header feature__header_inactive section-header section-header_type_feature">
+          <header class="feature__header feature__header_inactive section-header">
             <h2 class="section-header__title title">Красивая <br class="section-header__title-line-break">дорога</h2>
             <p class="section-header__caption">&ndash; №4 &ndash;</p>
             <p class="section-header__description section-header__description_feature">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -115,7 +115,7 @@
         </li>
 
         <li class="features__item feature feature_inactive feature_inactive-last">
-          <header class="feature__header feature__header_inactive section-header section-header_type_feature">
+          <header class="feature__header feature__header_inactive section-header">
             <h2 class="section-header__title title">Мало <br class="section-header__title-line-break">туристов</h2>
             <p class="section-header__caption">&ndash; №5 &ndash;</p>
             <p class="section-header__description section-header__description_feature">Большинство едет в Гранд Каньен и толпится там</p>
@@ -135,10 +135,11 @@
           <a href="#" class="search__button button button_size_large" title="Найти гостиницу">Найти гостиницу</a>
         </header>
 
-        <div class="search__preview map-preview">
+        <div class="search__preview">
           <iframe
+            class="map-preview"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1677463.13442288!2d-112.82253294622686!3d34.83743005607727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1575660456124!5m2!1sru!2sru"
-            width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" title="Карта">
+            width="320" height="350" title="Карта">
           </iframe>
         </div>
       </article>

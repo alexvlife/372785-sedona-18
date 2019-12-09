@@ -1,6 +1,18 @@
 .section-header {
   text-align: center;
 
+  &_page_index {
+    padding: 39px 25px 5px;
+  }
+
+  &_page_photo {
+    padding: 38px 25px 5px;
+  }
+
+  &_page_form {
+    padding: 38px 20px 17px;
+  }
+
   &_color_inverse {
     background-color: $block-bg-color;
     color: $page-text-color-inverse;
@@ -15,6 +27,10 @@
 .section-header__caption {
   margin-top: 6px;
   line-height: 1.71;
+
+  &_feature-top {
+    margin-top: 7px;
+  }
 }
 
 .section-header__description {
@@ -24,11 +40,15 @@
   &_feature {
     margin-top: 14px;
     line-height: 1.61;
+    letter-spacing: 0.1px;
   }
 
-  &_page_photo,
+  &_page_photo {
+    margin-top: 26px;
+  }
+
   &_page_form {
-    margin-top: 25px;
+    margin-top: 26px;
   }
 }
 
@@ -38,15 +58,27 @@
 
 @media (min-width: $tablet-width) {
   .section-header {
+    &_page_index {
+      padding: 48px 135px 51px;
+    }
+
+    &_page_photo {
+      padding: 51px 160px 50px;
+    }
+
+    &_page_form {
+      padding: 51px 160px 50px;
+    }
+
     &_type_feature {
-      width: 256px;
+      width: 251px;
       min-height: 256px;
-      padding: 44px 46px 35px;
+      padding: 44px 42px 35px;
     }
   }
 
   .section-header__title {
-    line-height: 1.35;
+    line-height: 1.27;
     letter-spacing: 0.2px;
   }
 
@@ -55,13 +87,13 @@
   }
 
   .section-header__description {
-    margin-top: 27px;
+    margin-top: 30px;
     letter-spacing: 0.1px;
 
     &_feature {
       margin-top: 21px;
       line-height: 1.5;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.2px;
     }
 
     &_page_photo {
@@ -69,16 +101,28 @@
     }
 
     &_page_form {
-      margin-top: 23px;
+      margin-top: 24px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .section-header {
+    &_page_index {
+      padding: 49px 330px 50px;
+    }
+
+    &_page_photo {
+      padding: 52px 376px 51px;
+    }
+
+    &_page_form {
+      padding: 52px 378px 50px;
+    }
+
     &_type_feature {
-      width: 300px;
-      padding: 50px 91px 35px;
+      width: 299px;
+      padding: 51px 92px 35px;
     }
   }
 

@@ -13,19 +13,19 @@
 }
 
 .form__bottom {
-  margin-top: 18px;
+  margin-top: 17px;
 }
 
 @media (min-width: $tablet-width) {
   .form {
-    padding: 24px 60px 47px;
+    padding: 24px 60px 69px;
   }
 
   .form__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   .form__submit {
@@ -39,7 +39,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 8px 120px 47px;
+    padding: 8px 120px 77px;
   }
 
   .form__bottom {
