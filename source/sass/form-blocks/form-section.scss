@@ -9,6 +9,10 @@
   margin-bottom: 22px;
   text-align: center;
   line-height: 1.44;
+
+  &_field-opinion {
+    margin-bottom: 24px;
+  }
 }
 
 .form-section__control-list {
@@ -60,11 +64,11 @@
 
   .form-section__control-list {
     &_field-opinion {
-      margin-top: 57px;
+      margin-top: 59px;
     }
 
     &_field-present {
-      margin-top: 55px;
+      margin-top: 57px;
     }
 
     &_field-places {
@@ -88,9 +92,22 @@
   .form-section__control-list {
     margin-top: 58px;
 
+    &_field-opinion {
+      margin-top: 60px;
+      margin-bottom: 2px;
+    }
+
+    &_field-present {
+      margin-top: 58px;
+    }
+
     &_field-places {
       margin-top: 41px;
       margin-bottom: 34px;
     }
+  }
+
+  .form-section__field-textarea {
+    margin-top: 39px;
   }
 }
