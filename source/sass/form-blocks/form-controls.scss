@@ -3,7 +3,7 @@
 .form-controls {
   display: flex;
   flex-direction: column;
-  width: $page-min-width;
+  width: $page-min-width - 40px;
 }
 
 .form-controls__item {

@@ -1,8 +1,10 @@
 @import "../variables";
 
 .player-action {
-  background-repeat: no-repeat;
   height: 20px;
+  border: none;
+  background: none;
+  background-repeat: no-repeat;
 
   &_replay {
     width: 16px;

@@ -3,6 +3,9 @@
 .toggle-button {
   width: $toggle-button-width;
   height: $toggle-button-height;
+  outline: none;
+  border: none;
+  background: none;
   background-repeat: no-repeat;
 
   &_open {

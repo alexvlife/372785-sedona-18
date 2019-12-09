@@ -45,24 +45,17 @@
 @import "player/video-preview";
 @import "variables";
 
-* {
+html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 a {
   text-decoration: none;
   color: $page-text-color-secondary;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-button {
-  background: none;
 }

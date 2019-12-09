@@ -3,6 +3,7 @@
 .page-body {
   width: auto;
   max-width: $desktop-width;
+  min-width: $page-min-width;
   margin: 0 auto;
   font-family: $font-family-regular;
   font-size: $text-size-base;
