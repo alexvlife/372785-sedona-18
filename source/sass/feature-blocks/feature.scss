@@ -60,13 +60,13 @@
     }
   }
 
-  .feature__header,
-  .feature__header_inactive {
-    margin: 0;
-  }
-
   .feature__header {
     flex-grow: 1;
+    margin: 0;
+
+    &_inactive {
+      margin: 45px 47px 45px;
+    }
   }
 
   .feature__preview {
@@ -81,5 +81,11 @@
 @media (min-width: $desktop-width) {
   .feature__content {
     margin-bottom: 63px;
+  }
+
+  .feature__header {
+    &_inactive {
+      margin: 44px 58px 66px;
+    }
   }
 }
