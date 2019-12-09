@@ -31,7 +31,10 @@
     letter-spacing: 0.1px;
   }
 
-  &_page_photo,
+  &_page_photo {
+    margin-top: 26px;
+  }
+
   &_page_form {
     margin-top: 25px;
   }

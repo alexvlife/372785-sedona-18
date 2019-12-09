@@ -8,3 +8,9 @@
 .rating__icon {
   margin-right: 13px;
 }
+
+@media (min-width: $tablet-width) {
+  .rating__icon {
+    margin-right: 9px;
+  }
+}
