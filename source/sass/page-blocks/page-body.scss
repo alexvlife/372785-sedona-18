@@ -1,23 +1,10 @@
 @import "../variables";
 
 .page-body {
-  width: $page-min-width;
-  margin: 0 auto;
+  width: auto;
   font-family: $font-family-regular;
   font-size: $text-size-base;
   color: $page-text-color-secondary;
   text-transform: uppercase;
   background-color: $page-bg-color;
-}
-
-@media (min-width: $tablet-width) {
-  .page-body {
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-body {
-    width: $desktop-width;
-  }
 }
