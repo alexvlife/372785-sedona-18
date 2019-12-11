@@ -1,18 +1,15 @@
 @import "../variables";
 
 .feature-preview {
-  min-height: 260px;
+  height: 260px;
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: cover;
+  overflow: hidden;
+}
 
-  &_bridge {
-    background-image: url("../img/main-bridge-mobile@1x.jpg");
-  }
-
-  &_house {
-    background-image: url("../img/main-city-mobile@1x.jpg");
-  }
+.feature-preview img {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
