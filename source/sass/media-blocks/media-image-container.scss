@@ -1,14 +1,12 @@
 @import "../variables";
 
-.media-image-container,
-.media-image-container__item {
+.media-image-container {
   width: 280px;
   height: 280px;
 }
 
 @media (min-width: $tablet-width) {
-  .media-image-container,
-  .media-image-container__item {
+  .media-image-container {
     width: 324px;
     height: 267px;
 
@@ -20,8 +18,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .media-image-container,
-  .media-image-container__item {
+  .media-image-container {
     width: 400px;
 
     &_size_large {
