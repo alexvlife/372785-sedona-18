@@ -8,6 +8,8 @@ $image-margin-top: -27px;
 }
 
 .page-header__logo {
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
 }
 
@@ -38,6 +40,10 @@ $image-margin-top: -27px;
     position: absolute;
     top: 0;
     align-self: center;
+  }
+
+  .page-header__image {
+    margin-top: 0;
   }
 
   .page-header__nav-button {

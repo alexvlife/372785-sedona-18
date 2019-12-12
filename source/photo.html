@@ -9,6 +9,7 @@
   <body class="page-body">
 
     <header class="page-body__header page-header">
+
       <nav class="page-header__navigation main-navigation-container">
         <ul class="main-navigation-container__list main-navigation list-reset">
           <li class="main-navigation__item">
@@ -47,8 +48,17 @@
       </button>
 
       <div class="page-header__image promo-image promo-image_secondary" title="Sedona">
+        <img class="promo-image__text promo-image-text promo-image-text_secondary" src="img/text-sedona.svg" alt="Welcome to Sedona">
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+          <img class="promo-image__decorative promo-image-decorative" src="img/bg-intro-triangle-mobile.svg" alt="Декоративный элемент">
+        </picture>
+
         <span class="visually-hidden">Welcome to the gorgeous Sedona</span>
       </div>
+
     </header>
 
     <main class="page-body__main page-main">
@@ -198,11 +208,14 @@
 
         <section class="demo__preview video-player">
           <div class="video-player__preview video-preview">
-            <img
-              src="img/video-mobile@1x.jpg"
-              width="320"
-              height="200"
-              alt="Предпросмотр видео">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img
+                src="img/video-mobile@1x.jpg"
+                srcset="img/video-mobile@2x.jpg 2x"
+                alt="Предпросмотр видео">
+            </picture>
           </div>
 
           <ul class="video-player__control-panel player-control-panel list-reset">

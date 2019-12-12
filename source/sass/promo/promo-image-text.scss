@@ -1,0 +1,23 @@
+@import "../variables";
+
+.promo-image-text {
+  display: block;
+  width: 280px;
+  height: 214px;
+
+  &_secondary {
+    width: 229px;
+    height: 39px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo-image-text {
+    width: 460px;
+    height: 350px;
+
+    &_secondary {
+      height: 80px;
+    }
+  }
+}
