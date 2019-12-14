@@ -1,3 +1,5 @@
+@import "../variables";
+
 .copyright {
   display: flex;
   justify-content: space-between;
@@ -10,4 +12,16 @@
 
 .copyright__link {
   margin-left: 11px;
+}
+
+.copyright__image {
+  fill: $nav-link-text-color-base;
+
+  &:hover {
+    fill: $link-text-color-hover;
+  }
+
+  &:active {
+    fill: $nav-link-text-color-down;
+  }
 }
