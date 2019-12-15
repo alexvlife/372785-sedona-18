@@ -4,4 +4,13 @@
   display: block;
   width: 23px;
   height: 21px;
+  fill: black;
+  opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .rating-icon {
+    fill: $white;
+    opacity: 1;
+  }
 }
