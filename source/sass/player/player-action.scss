@@ -1,23 +1,47 @@
 @import "../variables";
 
 .player-action {
+  cursor: pointer;
   height: 20px;
+  padding: 0;
+  fill: $dull-grey;
+  outline: none;
   border: none;
   background: none;
-  background-repeat: no-repeat;
 
   &_replay {
     width: 16px;
-    background-image: url("../img/icon-video-replay.svg");
   }
 
   &_subtitles {
     width: 32px;
-    background-image: url("../img/icon-video-subtitles.svg");
   }
 
   &_fullscreen {
     width: 20px;
-    background-image: url("../img/icon-video-fullscreen.svg");
+  }
+
+  &:hover {
+    fill: $black-medium;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .player-action {
+    fill: $button-text-color-base;
+
+    &:hover {
+      fill: $button-text-color-base;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

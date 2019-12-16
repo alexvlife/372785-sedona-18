@@ -213,12 +213,13 @@
         <section class="demo__preview video-player">
           <div class="video-player__preview video-preview">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img
-                src="img/video-mobile@1x.jpg"
-                srcset="img/video-mobile@2x.jpg 2x"
-                alt="Предпросмотр видео">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Предпросмотр видео">
             </picture>
           </div>
 
@@ -226,7 +227,11 @@
             <li class="player-control-panel__wrapper">
               <button
                 class="player-control-panel__button player-action player-action_replay"
-                type="button" title="Воспроизвести снова"></button>
+                type="button" title="Воспроизвести снова">
+                <svg width="16" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                </svg>
+              </button>
             </li>
             <li class="player-control-panel__wrapper player-control-panel__wrapper_item_progress-bar">
               <label class="player-control-panel__progress-bar player-progress-bar">
@@ -236,12 +241,20 @@
             <li class="player-control-panel__wrapper player-control-panel__wrapper_item_subtitles">
               <button
                 class="player-control-panel__button player-action player-action_subtitles"
-                type="button" title="Включить субтитры"></button>
+                type="button" title="Включить субтитры">
+                <svg width="32" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                </svg>
+              </button>
             </li>
             <li class="player-control-panel__wrapper">
               <button
                 class="player-control-panel__button player-action player-action_fullscreen"
-                type="button" title="Развернуть на весь экран"></button>
+                type="button" title="Развернуть на весь экран">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                </svg>
+              </button>
             </li>
           </ul>
 
