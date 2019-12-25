@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Фото и видео</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-body__header page-header">
 
@@ -79,7 +82,7 @@
             <div class="media-info__rating rating">
               <a class="rating__icon" href="#" title="Нравится">
                 <svg class="rating-icon" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <span class="rating__score title title_secondary">1350</span>
@@ -111,7 +114,7 @@
             <div class="media-info__rating rating">
               <a class="rating__icon" href="#" title="Нравится">
                 <svg class="rating-icon" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <span class="rating__score title title_secondary">143</span>
@@ -143,7 +146,7 @@
             <div class="media-info__rating rating">
               <a class="rating__icon" href="#" title="Нравится">
                 <svg class="rating-icon" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <span class="rating__score title title_secondary">96</span>
@@ -175,7 +178,7 @@
             <div class="media-info__rating rating">
               <a class="rating__icon" href="#" title="Нравится">
                 <svg class="rating-icon" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
               </a>
               <span class="rating__score title title_secondary">254</span>
@@ -229,7 +232,7 @@
                 class="player-control-panel__button player-action player-action_replay"
                 type="button" title="Воспроизвести снова">
                 <svg width="16" height="20">
-                  <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                  <use xlink:href="#icon-video-replay"></use>
                 </svg>
               </button>
             </li>
@@ -243,7 +246,7 @@
                 class="player-control-panel__button player-action player-action_subtitles"
                 type="button" title="Включить субтитры">
                 <svg width="32" height="20">
-                  <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                  <use xlink:href="#icon-video-subtitles"></use>
                 </svg>
               </button>
             </li>
@@ -252,7 +255,7 @@
                 class="player-control-panel__button player-action player-action_fullscreen"
                 type="button" title="Развернуть на весь экран">
                 <svg width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                  <use xlink:href="#icon-video-fullscreen"></use>
                 </svg>
               </button>
             </li>
@@ -302,7 +305,7 @@
         <span class="copyright__caption">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Academy">
           <svg class="copyright__image" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
+            <use xlink:href="#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </p>
