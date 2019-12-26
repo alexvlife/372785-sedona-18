@@ -10,6 +10,7 @@
     "del": "5.1.x",
     "gulp": "4.0.x",
     "gulp-csso": "4.0.x",
+    "gulp-htmlmin": "5.0.x",
     "gulp-imagemin": "6.2.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
