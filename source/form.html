@@ -5,6 +5,10 @@
     <title>HTML Academy: Седона. Форма отзыва</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/ptsans.woff" as="font">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="/fonts/ptsansbold.woff" as="font">
+    <link rel="preload" href="/fonts/ptsansbold2.woff2" as="font">
   </head>
   <body class="page-body">
     <div style="display:none">
@@ -83,13 +87,13 @@
                 <label class="form-control__label form-control__label_field_text" for="firstName">Имя*:</label>
                 <input
                   class="form-control__field-text form-field-text title title_form-label title_lowercase"
-                  type="text" name="firstName" id="firstName" placeholder="Петр">
+                  type="text" name="firstName" id="firstName" placeholder="Петр" required>
               </li>
               <li class="form-controls__item form-control">
                 <label class="form-control__label form-control__label_field_text" for="lastName">Фамилия*:</label>
                 <input
                   class="form-control__field-text form-field-text title title_form-label title_lowercase"
-                  type="text" name="lastName" id="lastName" placeholder="Иванов">
+                  type="text" name="lastName" id="lastName" placeholder="Иванов" required>
               </li>
               <li class="form-controls__item form-control">
                 <label class="form-control__label form-control__label_field_text" for="secondName">Отчество:</label>
@@ -110,13 +114,13 @@
                 </label>
                 <input
                   class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_phone title title_form-label title_lowercase"
-                  type="tel" name="phone" id="phone" placeholder="Введите телефон">
+                  type="tel" name="phone" id="phone" placeholder="Введите телефон" pattern="^[0-9]+$" required>
               </li>
               <li class="form-controls__item form-controls__item_field-contacts form-control form-control_field_contacts form-control_icon_base form-control_icon_email">
                 <label class="form-control__label form-control__label_field_text form-control__label_field_contacts" for="email">Электронная почта*:</label>
                 <input
                   class="form-control__field-text form-field-text form-field-text_icon form-field-text_icon_email title title_form-label title_lowercase"
-                  type="email" name="email" id="email" placeholder="Введите e-mail">
+                  type="email" name="email" id="email" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </li>
