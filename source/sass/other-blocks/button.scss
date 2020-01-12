@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 58px;
+  height: 58px;
   font-family: $font-family-bold;
   font-size: $title-size-base;
   color: $button-text-color-base;
@@ -18,13 +18,13 @@
 
   &_nav {
     box-sizing: content-box;
-    min-height: 55px;
+    height: 55px;
     letter-spacing: 0.1px;
   }
 
   &_social {
     width: 46px;
-    min-height: 48px;
+    height: 48px;
   }
 
   &_size_medium {

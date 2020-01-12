@@ -1,16 +1,23 @@
+@import "../variables";
+
 .section-header {
   text-align: center;
+  background-color: inherit;
 
   &_page_index {
     padding: 39px 25px 5px;
   }
 
   &_page_photo {
-    padding: 38px 25px 0;
+    padding: 38px 25px 27px;
   }
 
   &_page_form {
     padding: 38px 20px 17px;
+  }
+
+  &_demo {
+    padding: 31px 42px 36px;
   }
 
   &_color_inverse {
@@ -59,7 +66,7 @@
 @media (min-width: $tablet-width) {
   .section-header {
     &_page_index {
-      padding: 48px 135px 51px;
+      padding: 49px 135px 51px;
     }
 
     &_page_photo {
@@ -68,6 +75,10 @@
 
     &_page_form {
       padding: 51px 160px 50px;
+    }
+
+    &_demo {
+      padding: 40px 168px 35px;
     }
 
     &_type_feature {
@@ -118,6 +129,10 @@
 
     &_page_form {
       padding: 52px 378px 50px;
+    }
+
+    &_demo {
+      padding: 46px 380px 35px;
     }
 
     &_type_feature {

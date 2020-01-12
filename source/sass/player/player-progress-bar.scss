@@ -3,7 +3,6 @@
 .player-progress-bar {
   display: flex;
   width: 280px;
-  height: 45px;
   background-color: $black;
   opacity: 0.6;
 }
@@ -11,6 +10,7 @@
 .player-progress-bar__item {
   flex-grow: 1;
   margin: 0 22px;
+  padding: 12px 0;
 }
 
 @media (min-width: $tablet-width) {

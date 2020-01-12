@@ -4,8 +4,10 @@
   background-color: $page-bg-color;
 }
 
-.page-main__media-list {
-  margin-top: 27px;
+.page-main__demo,
+.page-main__media-list,
+.page-main__form {
+  background-color: inherit;
 }
 
 @media (min-width: $tablet-width) {

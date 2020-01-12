@@ -5,13 +5,24 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-height: 233px;
   padding: 0 20px;
   background-color: $page-bg-color;
 
   &_secondary {
     padding-top: 5px;
   }
+}
+
+.page-footer__title {
+  margin-top: 20px;
+}
+
+.page-footer__socials {
+  margin-top: 38px;
+}
+
+.page-footer__copyright {
+  margin-top: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +35,12 @@
     &_secondary {
       padding-top: 16px;
     }
+  }
+
+  .page-footer__title,
+  .page-footer__socials,
+  .page-footer__copyright {
+    margin-top: 0;
   }
 }
 

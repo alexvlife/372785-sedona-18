@@ -9,6 +9,11 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <script>
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body class="page-body">
     <div style="display:none">
@@ -209,7 +214,7 @@
       </ul>
 
       <article class="page-main__demo demo">
-        <header class="demo__header section-header">
+        <header class="demo__header section-header section-header_demo">
           <h2 class="section-header__title title title_page_photo margin-reset">Все еще сомневаетесь?</h2>
           <p class="section-header__description section-header__description_page_photo margin-reset">
             Смотрите видеопрезентацию и скорее за билетами,
